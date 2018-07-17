@@ -43,6 +43,6 @@ public class ThomasController : MonoBehaviour {
     void OnCollisionStay(Collision collisioninfo)
     {
         isGrounded = true; // Ver otra cosa sin tags que mejore esto que se procesa todo el tiempo.
-    }
-        
+	}
+	    
 }
