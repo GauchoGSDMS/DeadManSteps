@@ -1,0 +1,26 @@
+Mobile Satellite control system.
+
+Satellite: 681 Polys
+
+Case: 72 Polys
+
+Laptop: 46 Polys
+
+4 X Texture maps .TIF:
+
+1 X Satellite Texture
+
+1 X Satellite Texture + Specular(Alpha)
+
+1 X Satellite Specular
+
+1 X Case/Laptop Texture
+
+ENJOY!
+
+Anything else you would like to change or customize please let me know!
+
+
+duane_mayberry@yahoo.co.uk
+
+www.duanesmind.co.uk
