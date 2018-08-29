@@ -1,10 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: a64a2e266e0507641b07cea2268868b1
+=======
+guid: 2453649761536964fbae61451f45be88
+>>>>>>> parent of 79d0b5a... Camera Script
 folderAsset: yes
 timeCreated: 1525097100
 licenseType: Free
 DefaultImporter:
+<<<<<<< HEAD
   externalObjects: {}
+=======
+>>>>>>> parent of 79d0b5a... Camera Script
   userData: 
   assetBundleName: 
   assetBundleVariant: 
