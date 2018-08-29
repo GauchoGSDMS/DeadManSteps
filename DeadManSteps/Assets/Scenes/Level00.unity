@@ -2864,6 +2864,7 @@ RectTransform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 83fea2c... Merge branch 'master' of https://github.com/GauchoGSDMS/DeadManSteps
   m_Father: {fileID: 1423948106}
@@ -2876,6 +2877,10 @@ RectTransform:
   m_Father: {fileID: 1423948106}
   m_RootOrder: 2
 >>>>>>> parent of 83fea2c... Merge branch 'master' of https://github.com/GauchoGSDMS/DeadManSteps
+=======
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+>>>>>>> parent of 79d0b5a... Camera Script
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3695,6 +3700,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Father: {fileID: 1423948106}
   m_RootOrder: 1
 =======
@@ -3713,6 +3719,10 @@ Transform:
   m_Father: {fileID: 1423948106}
   m_RootOrder: 1
 >>>>>>> parent of 83fea2c... Merge branch 'master' of https://github.com/GauchoGSDMS/DeadManSteps
+=======
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+>>>>>>> parent of 79d0b5a... Camera Script
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &544427277
 GameObject:
@@ -3828,6 +3838,7 @@ Prefab:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 1
 =======
       value: 3
@@ -3841,6 +3852,9 @@ Prefab:
 =======
       value: 1
 >>>>>>> parent of 83fea2c... Merge branch 'master' of https://github.com/GauchoGSDMS/DeadManSteps
+=======
+      value: 2
+>>>>>>> parent of 79d0b5a... Camera Script
       objectReference: {fileID: 0}
     - target: {fileID: 149790, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
       propertyPath: m_TagString
@@ -5445,6 +5459,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 3
 =======
   m_RootOrder: 5
@@ -5458,6 +5473,9 @@ Transform:
 =======
   m_RootOrder: 3
 >>>>>>> parent of 83fea2c... Merge branch 'master' of https://github.com/GauchoGSDMS/DeadManSteps
+=======
+  m_RootOrder: 4
+>>>>>>> parent of 79d0b5a... Camera Script
   m_LocalEulerAnglesHint: {x: 33.87, y: 0, z: 0}
 --- !u!1 &889872491
 GameObject:
@@ -6035,6 +6053,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 4
 =======
   m_RootOrder: 6
@@ -6048,6 +6067,9 @@ Transform:
 =======
   m_RootOrder: 4
 >>>>>>> parent of 83fea2c... Merge branch 'master' of https://github.com/GauchoGSDMS/DeadManSteps
+=======
+  m_RootOrder: 5
+>>>>>>> parent of 79d0b5a... Camera Script
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &985714469
 GameObject:
@@ -7367,6 +7389,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 2
 =======
   m_RootOrder: 4
@@ -7380,6 +7403,9 @@ Transform:
 =======
   m_RootOrder: 2
 >>>>>>> parent of 83fea2c... Merge branch 'master' of https://github.com/GauchoGSDMS/DeadManSteps
+=======
+  m_RootOrder: 3
+>>>>>>> parent of 79d0b5a... Camera Script
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1362808964
 GameObject:

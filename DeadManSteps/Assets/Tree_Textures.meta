@@ -1,6 +1,10 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: a64a2e266e0507641b07cea2268868b1
+=======
+guid: 2453649761536964fbae61451f45be88
+>>>>>>> parent of 79d0b5a... Camera Script
 =======
 guid: 2453649761536964fbae61451f45be88
 >>>>>>> parent of 79d0b5a... Camera Script
@@ -9,7 +13,10 @@ timeCreated: 1525097100
 licenseType: Free
 DefaultImporter:
 <<<<<<< HEAD
+<<<<<<< HEAD
   externalObjects: {}
+=======
+>>>>>>> parent of 79d0b5a... Camera Script
 =======
 >>>>>>> parent of 79d0b5a... Camera Script
   userData: 

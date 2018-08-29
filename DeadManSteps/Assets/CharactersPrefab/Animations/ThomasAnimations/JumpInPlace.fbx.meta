@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 3857a1ac9814d81419078d20cacf19ee
+=======
+guid: f832bf540500ff84ab6622f1a097f175
+>>>>>>> parent of 79d0b5a... Camera Script
 timeCreated: 1535225748
 licenseType: Free
 ModelImporter:
