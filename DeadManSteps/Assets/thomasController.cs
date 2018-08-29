@@ -25,7 +25,7 @@ public class thomasController : MonoBehaviour {
 		{
 			Cursor.visible = true;
 			Cursor.lockState = CursorLockMode.None;
-			mm.gameIsPaused = true;
+			//mm.gameIsPaused = true;
 			//GUI y que la camara se deje de mover despues de esto.
 			//Aca iria la pregunta si esta pausado... Y deberia de tirar a las 2 funciones la que pausa y abre el panell
 			//Y la que inhabilita el juego.  
