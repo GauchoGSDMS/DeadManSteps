@@ -1,6 +1,7 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: a64a2e266e0507641b07cea2268868b1
 =======
 guid: 2453649761536964fbae61451f45be88
@@ -8,10 +9,14 @@ guid: 2453649761536964fbae61451f45be88
 =======
 guid: 2453649761536964fbae61451f45be88
 >>>>>>> parent of 79d0b5a... Camera Script
+=======
+guid: 2453649761536964fbae61451f45be88
+>>>>>>> parent of 8e35441... Dialogos
 folderAsset: yes
 timeCreated: 1525097100
 licenseType: Free
 DefaultImporter:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   externalObjects: {}
@@ -19,6 +24,8 @@ DefaultImporter:
 >>>>>>> parent of 79d0b5a... Camera Script
 =======
 >>>>>>> parent of 79d0b5a... Camera Script
+=======
+>>>>>>> parent of 8e35441... Dialogos
   userData: 
   assetBundleName: 
   assetBundleVariant: 

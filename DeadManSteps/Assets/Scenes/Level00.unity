@@ -1002,6 +1002,7 @@ Transform:
   m_Father: {fileID: 1809910858}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 1
 =======
   m_RootOrder: 2
@@ -1009,6 +1010,9 @@ Transform:
 =======
   m_RootOrder: 2
 >>>>>>> parent of 83fea2c... Merge branch 'master' of https://github.com/GauchoGSDMS/DeadManSteps
+=======
+  m_RootOrder: 2
+>>>>>>> parent of 8e35441... Dialogos
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &147365445
 Prefab:
@@ -2865,6 +2869,7 @@ RectTransform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 83fea2c... Merge branch 'master' of https://github.com/GauchoGSDMS/DeadManSteps
   m_Father: {fileID: 1423948106}
@@ -2881,6 +2886,10 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
 >>>>>>> parent of 79d0b5a... Camera Script
+=======
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+>>>>>>> parent of 8e35441... Dialogos
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3705,6 +3714,7 @@ Transform:
   m_RootOrder: 1
 =======
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 7
 >>>>>>> 51c989fef8f4096bc904a4c13ebe99cceff9f260
 =======
@@ -3723,6 +3733,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
 >>>>>>> parent of 79d0b5a... Camera Script
+=======
+  m_RootOrder: 6
+>>>>>>> parent of 8e35441... Dialogos
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &544427277
 GameObject:
@@ -3839,6 +3852,7 @@ Prefab:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 1
 =======
       value: 3
@@ -3855,6 +3869,9 @@ Prefab:
 =======
       value: 2
 >>>>>>> parent of 79d0b5a... Camera Script
+=======
+      value: 2
+>>>>>>> parent of 8e35441... Dialogos
       objectReference: {fileID: 0}
     - target: {fileID: 149790, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
       propertyPath: m_TagString
@@ -5460,6 +5477,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 3
 =======
   m_RootOrder: 5
@@ -5476,6 +5494,9 @@ Transform:
 =======
   m_RootOrder: 4
 >>>>>>> parent of 79d0b5a... Camera Script
+=======
+  m_RootOrder: 4
+>>>>>>> parent of 8e35441... Dialogos
   m_LocalEulerAnglesHint: {x: 33.87, y: 0, z: 0}
 --- !u!1 &889872491
 GameObject:
@@ -6054,6 +6075,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 4
 =======
   m_RootOrder: 6
@@ -6070,6 +6092,9 @@ Transform:
 =======
   m_RootOrder: 5
 >>>>>>> parent of 79d0b5a... Camera Script
+=======
+  m_RootOrder: 5
+>>>>>>> parent of 8e35441... Dialogos
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &985714469
 GameObject:
@@ -6113,6 +6138,7 @@ Transform:
   m_GameObject: {fileID: 985714469}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: -0, y: 0.9999562, z: -0, w: -0.009364339}
   m_LocalPosition: {x: -8.246263, y: -0.82999986, z: 5.8684044}
 =======
@@ -6123,12 +6149,17 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -8.372055, y: -0.82999986, z: 5.9021015}
 >>>>>>> parent of 83fea2c... Merge branch 'master' of https://github.com/GauchoGSDMS/DeadManSteps
+=======
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.372055, y: -0.82999986, z: 5.9021015}
+>>>>>>> parent of 8e35441... Dialogos
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 233886051}
   - {fileID: 1362808965}
   m_Father: {fileID: 1358570819}
   m_RootOrder: 27
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_LocalEulerAnglesHint: {x: 0, y: 181.073, z: 0}
@@ -6138,6 +6169,9 @@ Transform:
 =======
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 >>>>>>> parent of 83fea2c... Merge branch 'master' of https://github.com/GauchoGSDMS/DeadManSteps
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of 8e35441... Dialogos
 --- !u!1 &996943937
 GameObject:
   m_ObjectHideFlags: 0
@@ -7390,6 +7424,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 2
 =======
   m_RootOrder: 4
@@ -7406,6 +7441,9 @@ Transform:
 =======
   m_RootOrder: 3
 >>>>>>> parent of 79d0b5a... Camera Script
+=======
+  m_RootOrder: 3
+>>>>>>> parent of 8e35441... Dialogos
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1362808964
 GameObject:
@@ -11206,6 +11244,7 @@ Transform:
   m_GameObject: {fileID: 2077238965}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: 0.01300144, y: 0.33241963, z: 0.36189595, w: 0.8708384}
   m_LocalPosition: {x: 0.062284388, y: -0.06908178, z: -0.08265267}
   m_LocalScale: {x: 1, y: 1, z: -1.016356}
@@ -11219,6 +11258,11 @@ Transform:
   m_LocalPosition: {x: 0.108795255, y: -0.06439392, z: -0.0569722}
   m_LocalScale: {x: 1, y: 1, z: 1}
 >>>>>>> parent of 83fea2c... Merge branch 'master' of https://github.com/GauchoGSDMS/DeadManSteps
+=======
+  m_LocalRotation: {x: 0.14659221, y: 0.6917447, z: 0.14659221, w: 0.6917447}
+  m_LocalPosition: {x: 0.108795255, y: -0.06439392, z: -0.0569722}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+>>>>>>> parent of 8e35441... Dialogos
   m_Children: []
   m_Father: {fileID: 1277330742}
   m_RootOrder: 25
