@@ -11,6 +11,7 @@ public class MainMenu : MonoBehaviour {
 	
 	public GameObject loadingScreen;
 	public Scrollbar slider;
+	public GameObject pauseMenuUI = null;
 	public static bool gameIsPaused = false;
 
 	public void NewGame(int sceneIndex)
@@ -23,9 +24,60 @@ public class MainMenu : MonoBehaviour {
 		Application.Quit ();
 	}
 
+	void Start()
+	{
+		if(pauseMenuUI!= null)
+		{
+			Cursor.visible = false;
+			Cursor.lockState = CursorLockMode.Locked;
+		}
+		else
+		{
+			Cursor.visible = true;
+			Cursor.lockState = CursorLockMode.None;
+		}
+	}
+
+	public void MainMenuGame(int sceneIndex)
+	{
+		Cursor.visible = true;
+		Cursor.lockState = CursorLockMode.Locked;
+		Time.timeScale = 1f;
+		StartCoroutine(LoadAsynchronously(sceneIndex));
+	}
+
+	void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{		
+			if (gameIsPaused)
+			{
+				ResumeGame();	
+			}
+			else
+			{
+				PauseGame();
+			}
+		}
+	}
+	
+
 	public void ResumeGame()
 	{
-		
+		Cursor.visible = false;
+		Cursor.lockState = CursorLockMode.None;
+		pauseMenuUI.SetActive(false);
+		Time.timeScale = 1f;
+		gameIsPaused = false;
+	}
+
+	public void PauseGame()
+	{
+		Cursor.visible = true;
+		Cursor.lockState = CursorLockMode.Locked;
+		pauseMenuUI.SetActive(true);
+		Time.timeScale = 0f;
+		gameIsPaused = true;
 	}
 
 	IEnumerator LoadAsynchronously(int sceneIndex)
