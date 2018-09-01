@@ -133,10 +133,7 @@ public class ThomasMovementController : MonoBehaviour {
                 transformX = (1 / 90) * (DistanceFromNeutral);
                 transformZ = 90 - transformX;
             };
-           
-            //for monitoring and debugging:
-            Debug.Log("Main Camera's <color=red>Y rotation</color> is <color=red>" + facing + "</color>, and the <color=blue>Distance from Neutral rotation</color> <color=purple>(0/90/180/270)</color> is <color=blue>" + DistanceFromNeutral + "</color>.");
-         
+			
             finalX = (transformX * verticalAxis) + (transformZ * horizontalAxis);         
             finalZ = (transformZ * verticalAxis) + (transformX * horizontalAxis);
             transform.Translate((new Vector3( finalX * 0.01f , 0f , finalZ * 0.01f ))* 5f * Time.deltaTime);
