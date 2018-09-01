@@ -98,11 +98,6 @@ public class ThomasMovementController : MonoBehaviour {
 		if (e) {
 			return;
 		}
-
-
-
-
-
 	}
 
 
