@@ -13,6 +13,10 @@ public class MainMenu : MonoBehaviour {
 	public Scrollbar slider;
 	public GameObject pauseMenuUI = null;
 	public static bool gameIsPaused = false;
+	public GameObject pickUpMenuUI = null;
+
+	public delegate void ShowPickUpUI();
+	public static event ShowPickUpUI showUI;
 
 	public void NewGame(int sceneIndex)
 	{
