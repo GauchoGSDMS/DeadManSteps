@@ -27,7 +27,7 @@ public class CharacterAnimation : MonoBehaviour {
 
 	//Metodo para hacer externamente que el personaje corra.
 	public void Run(){
-		lockAnimations = false;
+		lockAnimations = false; 
 		idle = false;
 		talking = false;
 		running = true;

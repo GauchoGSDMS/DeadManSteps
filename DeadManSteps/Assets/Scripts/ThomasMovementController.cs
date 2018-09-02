@@ -7,45 +7,25 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class ThomasMovementController : MonoBehaviour {
 
-	private float speed = 3f; 
-	private float rotateSpeed = 85f;
+
+	private InputHandler inputHandler;
+
 
 	void Start()
 	{
-		
+		inputHandler = new InputHandler();
 	}
 
 	private void Update()
 	{
-		//ejecuta Las Animaciones del Personaje
-		MakeMovement();
-
+		if (inputHandler.HandleInput() != null)
+		{
+			Command cmd = inputHandler.HandleInput();
+			cmd.Execute(this.gameObject); // Aca podria ir cualquier cosa, siempre y cuando matchee con algun comando. 
+		}
+		//ejecut a Las Animaciones del Personaje
+		
 	}
-
-
-
-
-	void FixedUpdate()
-	{
-			
-	}
- 
-
-	//Metodo para mover y animar el personaje 
-	private void MakeMovement()
-	{
-		float translation = Input.GetAxis("Vertical")*speed;
-		float rotation = Input.GetAxis("Horizontal") * rotateSpeed;
-
-		translation *= Time.deltaTime;
-		rotation *= Time.deltaTime;
-
-		transform.Translate(0,0,translation);
-		transform.Rotate(0,rotation,0);	
-
-
-	}
-
 
 	void PlayerMoveForward(){
 
@@ -79,9 +59,8 @@ public class ThomasMovementController : MonoBehaviour {
             finalZ = (transformZ * verticalAxis) + (transformX * horizontalAxis);
             transform.Translate((new Vector3( finalX * 0.01f , 0f , finalZ * 0.01f ))* 5f * Time.deltaTime);
 
-
-
 	}
+	
 	/*
 		//Detectar teclas de movimiento
 		var noKey = !Input.anyKey; 

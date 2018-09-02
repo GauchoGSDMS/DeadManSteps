@@ -7402,22 +7402,6 @@ GameObject:
 Transform:
   m_PrefabParentObject: {fileID: 400008, guid: ce101762d28a90b43bdfd80cdd767491, type: 3}
   m_PrefabInternal: {fileID: 1778197994}
---- !u!114 &1506700966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1506700964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61c745d0cf1fe004d98f11db7b6f316a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_animator: {fileID: 1506700970}
-  crouch: 0
-  lockAnimations: 0
-  dead: 0
-  damage: 0
 --- !u!114 &1506700967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7446,11 +7430,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1.13, z: 0}
---- !u!95 &1506700970 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9500000, guid: ce101762d28a90b43bdfd80cdd767491,
-    type: 3}
-  m_PrefabInternal: {fileID: 1778197994}
 --- !u!1 &1523712676 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100010, guid: dce57d1e50d1fef489ee2d0fe5716701, type: 2}
@@ -8685,7 +8664,7 @@ Prefab:
     - target: {fileID: 9500000, guid: ce101762d28a90b43bdfd80cdd767491, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: e25b5e775906b404abb85f59428361ed, type: 2}
+      objectReference: {fileID: 9100000, guid: 013b787ff01b793408beb7c2c4d0bfe8, type: 2}
     - target: {fileID: 9500000, guid: ce101762d28a90b43bdfd80cdd767491, type: 3}
       propertyPath: m_CullingMode
       value: 0
