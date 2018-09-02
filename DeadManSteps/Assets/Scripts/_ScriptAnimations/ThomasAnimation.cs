@@ -39,6 +39,13 @@ public class ThomasAnimation : MonoBehaviour {
 		//Si estan bloqueadas las animaciones, No hacer Nada.
 		if (lockAnimations)	return;
 
+		if (Input.GetKey(KeyCode.W))
+			m_animator.SetBool("isRunning",true);
+		else
+			m_animator.SetBool("isRunning",false);
+
+
+	/*
 		//Detectar teclas de movimiento
 		var noKey = !Input.anyKey; 
 		var w = Input.GetKey (KeyCode.W);
@@ -116,7 +123,7 @@ public class ThomasAnimation : MonoBehaviour {
 		if (damage) {StartCoroutine( DamageAnimation() );return;}
 
 
-
+*/
 
 	}
 		
