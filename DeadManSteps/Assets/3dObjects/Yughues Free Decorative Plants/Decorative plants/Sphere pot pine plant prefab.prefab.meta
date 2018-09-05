@@ -1,14 +1,14 @@
 fileFormatVersion: 2
 guid: 6f418055a7a671248914cc59682de6a7
 labels:
-- Props
-- Environment
-- Plant
-- Decoration
 - Concrete
+- Decoration
+- Environment
 - Interior
 - Nature
 - Pine
+- Plant
+- Props
 timeCreated: 18446744011573954816
 NativeFormatImporter:
   externalObjects: {}
