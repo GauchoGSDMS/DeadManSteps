@@ -10,6 +10,7 @@ public class ThomasMovementController : MonoBehaviour {
 
 	private InputHandler inputHandler;
 
+	//1° Declarar un Singleton Acá -- Y ponerle el animator publico y estatico. 
 
 	void Start()
 	{

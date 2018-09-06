@@ -11,15 +11,11 @@ public class MoveCommand : Command {
 
 	public void Execute(GameObject actor)
 	{
-		//Debug.Log("Actor--->" + actor.name + "Cmd --> Move" );
-		//float translation = Input.GetAxis("Vertical") * speed;
-		//float rotation = Input.GetAxis("Horizontal") * rotateSpeed;
+		
 		translation *= speed;
 		translation *= Time.deltaTime;
 		rotation *= rotateSpeed;
 		rotation *= Time.deltaTime;
-		
-
 		actor.transform.Translate(0,0,translation);
 		actor.transform.Rotate(0,rotation,0);	
 

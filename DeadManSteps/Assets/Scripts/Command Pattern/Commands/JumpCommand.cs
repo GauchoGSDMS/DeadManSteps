@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class JumpCommand : Command {
 
-public void Execute(GameObject actor)
+	public void Execute(GameObject actor)
 	{
-		Debug.Log("Actor--->" + actor.name + "Cmd --> Jump" );
-		
+		actor.GetComponent<Rigidbody>().AddForce(Input.GetAxis("Horizontal"),30f,0);	
 	}
 }
