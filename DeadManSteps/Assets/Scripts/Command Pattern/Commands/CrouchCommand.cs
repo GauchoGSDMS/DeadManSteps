@@ -9,13 +9,16 @@ public class CrouchCommand : Command
 	{
 		if (!anim.GetBool("isCrouching"))
 		{
-			
 			anim.SetBool("isCrouching",true);
+			anim.SetTrigger("Crouch");
+			anim.SetBool("isRunning",false);
+			anim.SetBool("CanJump",false);
 			MoveCommand.speed = 1.5f;
 		}else
 		{
 			anim.SetBool("isCrouching",false);
 			MoveCommand.speed = 3f;
+			anim.SetBool("CanJump",true);
 		}
 	}
 

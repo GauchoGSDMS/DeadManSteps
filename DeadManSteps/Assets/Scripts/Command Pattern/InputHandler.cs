@@ -12,7 +12,7 @@ public class InputHandler {
 	public Command HandleInput()
 	{
 
-		if (Input.GetAxis("Jump") != 0) 
+		if (Input.GetAxis("Jump") != 0 && ThomasMovementController.Instance.anim.GetBool("CanJump")) 
 		{ 
 			// Significa que estoy queriendo saltar.
 			CmdJump = new JumpCommand();
@@ -37,15 +37,13 @@ public class InputHandler {
 			return CmdPickUp;
 		}
 
-		if ((Input.GetAxis("Horizontal") !=0 || Input.GetAxis("Vertical") !=0) && !ThomasMovementController.Instance.anim.GetBool("isCrouching"))
+		if (((Input.GetAxis("Horizontal") !=0 || Input.GetAxis("Vertical") !=0)) && !ThomasMovementController.Instance.anim.GetBool("isTaking"))
 		{
 			CmdMove = new MoveCommand();
 			MoveCommand.rotation = Input.GetAxis("Horizontal");
 			MoveCommand.translation = Input.GetAxis("Vertical");
 			return CmdMove;
 		}
-
-		
 
 		return null;// Si presiono algo que no sea lo que esta arriba GG. 
 

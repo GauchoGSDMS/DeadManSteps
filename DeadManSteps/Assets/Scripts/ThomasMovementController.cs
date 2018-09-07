@@ -44,19 +44,7 @@ public class ThomasMovementController : MonoBehaviour {
 	}
 
 
-	void OnTriggerStay(Collider other)
-	{
-		if(Input.GetKey(KeyCode.E))
-		{
-			Debug.Log(other.gameObject);
-			if (other.gameObject.CompareTag("PickUp"))
-			{
-				Debug.Log("Entre Aca");	
-				ThomasMovementController.Instance.anim.SetTrigger("isTakingObj");
-				other.gameObject.SetActive(false);
-			}
-		}
-	}
+	
 
 }
 
