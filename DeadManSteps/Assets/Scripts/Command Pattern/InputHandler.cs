@@ -7,10 +7,11 @@ using UnityEngine;
 
 public class InputHandler {
 
-	private Command CmdJump,CmdMove,CmdFire;
+	private Command CmdJump,CmdMove,CmdFire,CmdIdle,CmdCrouch,CmdPickUp;
 
 	public Command HandleInput()
 	{
+
 		if (Input.GetAxis("Jump") != 0) 
 		{ 
 			// Significa que estoy queriendo saltar.
@@ -18,21 +19,33 @@ public class InputHandler {
 			return CmdJump;
 		}
 
-		if ((Input.GetAxis("Horizontal") !=0 || Input.GetAxis("Vertical") !=0))
+		if(Input.GetKeyDown(KeyCode.C))
+		{
+			CmdCrouch = new CrouchCommand();
+			return CmdCrouch;
+		}
+
+		if (Input.GetAxis("Horizontal")==0 && Input.GetAxis("Vertical") == 0)
+		{
+			CmdIdle = new IdleCommand();
+			return CmdIdle;
+		}
+
+		if (Input.GetKeyDown(KeyCode.E))
+		{
+			CmdPickUp = new PickUpCommand();
+			return CmdPickUp;
+		}
+
+		if ((Input.GetAxis("Horizontal") !=0 || Input.GetAxis("Vertical") !=0) && !ThomasMovementController.Instance.anim.GetBool("isCrouching"))
 		{
 			CmdMove = new MoveCommand();
 			MoveCommand.rotation = Input.GetAxis("Horizontal");
 			MoveCommand.translation = Input.GetAxis("Vertical");
 			return CmdMove;
-		}else
-		{
-			
 		}
 
-		/*if (Input.GetAxis("Fire1")!=0)
-		{
-			Por ahora esta animacion la vamos a dejar de lado. Por que nosotros tendriamos 2 pasos anteriores.
-		}*/
+		
 
 		return null;// Si presiono algo que no sea lo que esta arriba GG. 
 

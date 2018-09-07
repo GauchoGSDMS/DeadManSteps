@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FireCommand : Command {
 
-	public void Execute(GameObject actor)
+	public void Execute(GameObject actor,Animator anim)
 	{
 		Debug.Log("Actor--->" + actor.name + "Cmd --> Fire" );
 	}

@@ -5,6 +5,6 @@ using UnityEngine;
 public interface Command 
 {
 
-	void Execute(GameObject actor);
+	void Execute(GameObject actor, Animator anim);
 
 }
