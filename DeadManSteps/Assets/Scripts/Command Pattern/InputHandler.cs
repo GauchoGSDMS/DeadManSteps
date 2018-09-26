@@ -12,7 +12,7 @@ public class InputHandler {
 	public Command HandleInput()
 	{
 
-		if (Input.GetAxis("Jump") != 0 && ThomasMovementController.Instance.anim.GetBool("CanJump")) 
+		if (Input.GetKeyDown(KeyCode.Space) && ThomasMovementController.Instance.anim.GetBool("CanJump")) 
 		{ 
 			// Significa que estoy queriendo saltar.
 			CmdJump = new JumpCommand();
