@@ -6,26 +6,10 @@ public class Thomas : Player
 {
 
 	private Animator animator;
-	public static Rigidbody rbThomas;
 	
-	public static Thomas Instance {get;private set;}
-
-
 	void Awake()
 	{
-
-		if(Instance == null)
-		{
-			Instance = this;
-			DontDestroyOnLoad(gameObject);
-		}
-		else
-		{
-			Destroy(gameObject);
-		}
-
 		animator = this.GetComponent<Animator>();
-		rbThomas = this.GetComponent<Rigidbody>();
 	}
 
 	void OnTriggerStay(Collider other)

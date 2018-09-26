@@ -6,7 +6,7 @@ public class JumpCommand : Command {
 
 	public void Execute(GameObject actor,Animator anim)
 	{
-			anim.SetTrigger("Jump");
-			
+		actor.GetComponent<Rigidbody>().AddForce(Input.GetAxis("Horizontal"),30f,0);
+		anim.SetTrigger("Jump");	
 	}
 }
