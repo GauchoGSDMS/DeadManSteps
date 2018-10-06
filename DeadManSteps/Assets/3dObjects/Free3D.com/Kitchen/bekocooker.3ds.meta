@@ -1,0 +1,156 @@
+fileFormatVersion: 2
+guid: a8e5835fae3ce5249ad1f8fef9634276
+timeCreated: 1538849327
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: ceramic_ri
+    100004: control_kn
+    100006: grill
+    100008: grill1
+    100010: grill_pan
+    100012: grill_pan_
+    100014: handle_2
+    100016: main_body
+    100018: oven_
+    100020: oven_1
+    100022: oven_shelf
+    100024: symbols
+    400000: //RootNode
+    400002: ceramic_ri
+    400004: control_kn
+    400006: grill
+    400008: grill1
+    400010: grill_pan
+    400012: grill_pan_
+    400014: handle_2
+    400016: main_body
+    400018: oven_
+    400020: oven_1
+    400022: oven_shelf
+    400024: symbols
+    2100000: Car Paint - Glo
+    2100002: Metal - Chrome
+    2100004: Car Paint - Whi
+    2100006: Mat
+    2300000: //RootNode
+    2300002: ceramic_ri
+    2300004: control_kn
+    2300006: grill
+    2300008: grill1
+    2300010: grill_pan
+    2300012: grill_pan_
+    2300014: handle_2
+    2300016: main_body
+    2300018: oven_
+    2300020: oven_1
+    2300022: oven_shelf
+    2300024: symbols
+    3300000: //RootNode
+    3300002: ceramic_ri
+    3300004: control_kn
+    3300006: grill
+    3300008: grill1
+    3300010: grill_pan
+    3300012: grill_pan_
+    3300014: handle_2
+    3300016: main_body
+    3300018: oven_
+    3300020: oven_1
+    3300022: oven_shelf
+    3300024: symbols
+    4300000: oven
+    4300002: ceramic_ri
+    4300004: grill_pan_
+    4300006: grill
+    4300008: grill1
+    4300010: symbols
+    4300012: grill_pan
+    4300014: oven_shelf
+    4300016: oven_
+    4300018: oven_1
+    4300020: control_kn
+    4300022: handle_2
+    4300024: main_body
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
