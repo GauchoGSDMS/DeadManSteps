@@ -14,14 +14,12 @@ public class MainMenu : MonoBehaviour {
 	public GameObject pauseMenuUI = null;
 	public static bool gameIsPaused = false;
 
-	public void NewGame(int sceneIndex)
-	{
+	public void NewGame(int sceneIndex){
 		StartCoroutine (LoadAsynchronously (sceneIndex));
 	}
 
-	public void QuitGame ()
-	{
-		Application.Quit ();
+	public void QuitGame (){
+		Application.Quit();
 	}
 
 	void Start()
@@ -80,18 +78,13 @@ public class MainMenu : MonoBehaviour {
 		gameIsPaused = true;
 	}
 
-	IEnumerator LoadAsynchronously(int sceneIndex)
-	{
+	IEnumerator LoadAsynchronously(int sceneIndex){
 		AsyncOperation operation = SceneManager.LoadSceneAsync (sceneIndex);
 		loadingScreen.SetActive (true);
 
-		while (!operation.isDone) 
-		{
-
+		while (!operation.isDone) {
 			float progress = Mathf.Clamp01 (operation.progress / .9f);
-
 			slider.size = progress;
-
 			yield return null;
 		}
 	}
