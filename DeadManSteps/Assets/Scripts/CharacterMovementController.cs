@@ -7,9 +7,6 @@
  
      // En el Inspector incluir referencia al Thomas, que es el que queremos seguir.
 	 public Transform Player;
-     int MoveSpeed = 4;
-     int MaxDist = 5;
-     int MinDist = 2;
  
      void Start()
      {
@@ -23,20 +20,16 @@
          transform.LookAt(Player);
  
 		// Si el NPC esta mas lejos que la distancia tolerada , lo sigue indefinidamente a modo NR.
-         if (Vector3.Distance(transform.position, Player.position) >= MinDist)
+		float distancia = Vector3.Distance(transform.position, Player.position);
+         if (distancia <= 5 && distancia >= 2)
          {
  
 			 //Accion de moverse en la escena
-             transform.position += transform.forward * MoveSpeed * Time.deltaTime;
-
+             transform.position += transform.forward * 3 * Time.deltaTime;
+				Debug.Log("Lejos");
 			//Deberiamos lanzar una animacion ...
- 
- 
-             if (Vector3.Distance(transform.position, Player.position) <= MaxDist)
-             {
-                 //Aca debe incluirse acciones, ejemplo Disparar o pegar con un palo, cuando alcanza al jugador.
-             }
- 
-         }
+         }else{
+			 Debug.Log("Alcance al Inutil");
+		 }
      }
  }
