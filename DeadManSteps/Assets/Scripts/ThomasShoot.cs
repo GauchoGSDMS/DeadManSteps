@@ -15,6 +15,8 @@ public class ThomasShoot : MonoBehaviour
 		//Este es el hitaso ...
         RaycastHit hit;
         
+		//Aca defino a quienes puedo matar con un raycast y a quienes no
+		List<string> _listaDePuedoMatar = new List<string>(){ "Elizabeth", "Policia", "Otros" };
 
 		//Si apretas click izquierdo del mouse y mantenes apretado ...
         if (Input.GetMouseButton(0)){
@@ -32,7 +34,7 @@ public class ThomasShoot : MonoBehaviour
 				string _objetoRayCasteadoNombre = _objetoRayCasteado.name;
 				
 				//Si ese objeto es elizabeth ...
-            	if(_objetoRayCasteadoNombre == "Elizabeth"){
+            	if( _listaDePuedoMatar.Contains(_objetoRayCasteadoNombre) ){
 					//Matarla, por ser mujer ... #NiUnaMenosLasBolas
 					Destroy(_objetoRayCasteado);
 				}
