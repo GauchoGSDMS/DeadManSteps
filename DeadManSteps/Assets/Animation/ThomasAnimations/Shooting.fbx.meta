@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: c33da93ebf9062e4f99704f6b54a9e95
-timeCreated: 1535824589
+guid: 9bed3888b188a81459bea437ea480b55
+timeCreated: 1535226971
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -172,7 +172,37 @@ ModelImporter:
     13700008: Hair
     13700010: Shoes
     13700012: Tops
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PackedMaterial0mat
+    second: {fileID: 2100000, guid: 7d65b250597c96e4b834ba24106653d9, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Thomas_Packed0_Diffuse
+    second: {fileID: 2800000, guid: 4da118bc88a87f844bccdd0a3bd018f8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Thomas_Packed0_Gloss
+    second: {fileID: 2800000, guid: 29e7eb13c1da62c489cb0c7948a32718, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Thomas_Packed0_Normal
+    second: {fileID: 2800000, guid: bf12f549853ab5c4bb441745c0a899ff, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Thomas_Packed0_Opacity
+    second: {fileID: 2800000, guid: 73d2c085187c0fa49988239c2d46d2ae, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Thomas_Packed0_Specular
+    second: {fileID: 2800000, guid: c0c63be649f972346861b1c000ff3a6f, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
@@ -198,7 +228,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: mixamo.com
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 34
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

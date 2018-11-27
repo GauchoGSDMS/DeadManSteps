@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: bf8183098d3490e4d8854d8ad1a49413
-timeCreated: 1535824587
+guid: 9ed71683de61b754f951d5cf8e84d2f9
+timeCreated: 1535225747
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -141,7 +141,7 @@ ModelImporter:
     400130: mixamorig:Spine1
     400132: mixamorig:Spine2
     400134: //RootNode
-    7400000: Run
+    7400000: mixamo.com
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -171,7 +171,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Run
+      name: mixamo.com
       takeName: mixamo.com
       firstFrame: 0
       lastFrame: 21

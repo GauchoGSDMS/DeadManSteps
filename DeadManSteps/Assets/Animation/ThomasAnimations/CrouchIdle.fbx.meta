@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 4707790131d1cf54c978b0651e5706e7
-timeCreated: 1535824577
+guid: bd335a2f5acf81b47b121d2a145a9eb3
+timeCreated: 1535225748
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -141,7 +141,7 @@ ModelImporter:
     400130: mixamorig:Spine
     400132: mixamorig:Spine1
     400134: mixamorig:Spine2
-    7400000: CrouchIdle
+    7400000: mixamo.com
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -162,7 +162,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -171,17 +171,17 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: CrouchIdle
+      name: mixamo.com
       takeName: mixamo.com
       firstFrame: 0
-      lastFrame: 47
+      lastFrame: 200
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

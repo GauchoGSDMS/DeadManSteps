@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 8268f71b6986f4842b42f0bafc854190
-timeCreated: 1535824583
+guid: 8a2af2ff77a757943997dc0c7d706ac2
+timeCreated: 1535225747
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -172,7 +172,37 @@ ModelImporter:
     13700008: Hair
     13700010: Shoes
     13700012: Tops
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PackedMaterial0mat
+    second: {fileID: 2100000, guid: ce90b7505619ee446af87db26ac7264f, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Thomas_Packed0_Diffuse
+    second: {fileID: 2800000, guid: 38546861306ebe5458c5888b70ff5fd8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Thomas_Packed0_Gloss
+    second: {fileID: 2800000, guid: b1370f623184c1d42bfe635f439d689a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Thomas_Packed0_Normal
+    second: {fileID: 2800000, guid: 08d48d4180a3be2428a8329445d8f1ad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Thomas_Packed0_Opacity
+    second: {fileID: 2800000, guid: 4537e18cd44cf0e41906f46eef7f9a58, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Thomas_Packed0_Specular
+    second: {fileID: 2800000, guid: 6a608c7661d04934fa682041d3b65db6, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

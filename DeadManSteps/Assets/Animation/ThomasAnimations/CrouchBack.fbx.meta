@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: ca753023d7a801841b9ceab356444462
-timeCreated: 1535824590
+guid: 6cd29f7a8b395804f929fe5e55f7079c
+timeCreated: 1535225745
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -141,7 +141,7 @@ ModelImporter:
     400130: mixamorig:Spine
     400132: mixamorig:Spine1
     400134: mixamorig:Spine2
-    7400000: CrouchMoving
+    7400000: mixamo.com
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -171,7 +171,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: CrouchMoving
+      name: mixamo.com
       takeName: mixamo.com
       firstFrame: 0
       lastFrame: 41
