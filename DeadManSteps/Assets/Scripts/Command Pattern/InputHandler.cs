@@ -44,6 +44,7 @@ public class InputHandler {
 			MoveCommand.translation = Input.GetAxis("Vertical");
 			return CmdMove;
 		}
+     		
 
 		return null;// Si presiono algo que no sea lo que esta arriba GG. 
 
