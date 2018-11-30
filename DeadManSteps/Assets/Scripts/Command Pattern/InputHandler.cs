@@ -19,6 +19,12 @@ public class InputHandler {
 			return CmdJump;
 		}
 
+		if(Input.GetMouseButton(1))
+		{
+			CmdFire = new FireCommand();
+			return CmdFire;
+		}
+
 		if(Input.GetKeyDown(KeyCode.C))
 		{
 			CmdCrouch = new CrouchCommand();
@@ -44,7 +50,6 @@ public class InputHandler {
 			MoveCommand.translation = Input.GetAxis("Vertical");
 			return CmdMove;
 		}
-     		
 
 		return null;// Si presiono algo que no sea lo que esta arriba GG. 
 

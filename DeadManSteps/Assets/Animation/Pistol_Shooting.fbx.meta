@@ -172,7 +172,37 @@ ModelImporter:
     13700008: Hair
     13700010: Shoes
     13700012: Tops
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PackedMaterial0mat
+    second: {fileID: 2100000, guid: dd5c8893bc2c79f41a19d172201b00e1, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Thomas_Packed0_Diffuse
+    second: {fileID: 2800000, guid: 10b2a49c94b136a44848c64aa17fed93, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Thomas_Packed0_Gloss
+    second: {fileID: 2800000, guid: ba6697a7ae8b4b541a14659a44e12459, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Thomas_Packed0_Normal
+    second: {fileID: 2800000, guid: dd4050428ab29744fbc23c9b81b3ebc3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Thomas_Packed0_Opacity
+    second: {fileID: 2800000, guid: 51dffb4c8b66dac4b981b546d30c6ba6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Thomas_Packed0_Specular
+    second: {fileID: 2800000, guid: e9baea59417849a478596a3688282a9f, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

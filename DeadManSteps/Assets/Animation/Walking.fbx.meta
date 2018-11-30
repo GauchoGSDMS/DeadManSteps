@@ -172,7 +172,12 @@ ModelImporter:
     13700008: Hair
     13700010: Shoes
     13700012: Tops
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PackedMaterial0mat
+    second: {fileID: 2100000, guid: dd5c8893bc2c79f41a19d172201b00e1, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

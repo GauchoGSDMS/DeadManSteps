@@ -41,19 +41,8 @@ public class ThomasMovementController : MonoBehaviour {
 			Command cmd = inputHandler.HandleInput(); // Me devuelve que commando se va a ejecutar
 			cmd.Execute(this.gameObject,anim); //Ejecuta el comando especifico,aca podria ir cualquier cosa, siempre y cuando matchee con algun comando. 
 		}	
-		MouseEnX();
-	}
-
-	public void MouseEnX(){
-		float mousex = Input.GetAxis ("Mouse X");
-		if(mousex!=0){
-         	transform.Rotate(0, mousex*4.2f, 0);
-		}
-     
-	}
-
-
 	
-
+	}
+ 
 }
 
