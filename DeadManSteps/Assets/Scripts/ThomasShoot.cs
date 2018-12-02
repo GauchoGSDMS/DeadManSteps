@@ -14,6 +14,11 @@ public class ThomasShoot : MonoBehaviour
         Animator m_Animator = GetComponent<Animator>();
 		//Clickeando mouse apuntar.
 		if (Input.GetMouseButton(1)){
+			//Controla la camara rotando al pj con el mouse.
+			float mousex = Input.GetAxis ("Mouse X");
+			if(mousex!=0){
+				ThomasMovementController.Instance.transform.Rotate(0, mousex*4.2f, 0);
+			}
 			m_Animator.Play("PistolAim");
 			pistola.SetActive(true);
 			Disparar();
