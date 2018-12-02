@@ -9,7 +9,7 @@ public class ThomasMovementController : MonoBehaviour {
 
 	private InputHandler inputHandler;
 	public Animator anim;
-
+	public GameObject pistol;
 	public static ThomasMovementController Instance {get; private set;}
 	
 
