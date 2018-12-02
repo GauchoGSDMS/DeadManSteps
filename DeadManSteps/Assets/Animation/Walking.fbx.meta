@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 3b9f310e62b270d42a664c112c544bce
-timeCreated: 1543530885
+timeCreated: 1543777104
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -78,8 +78,8 @@ ModelImporter:
     100140: mixamorig:Spine1
     100142: mixamorig:Spine2
     100144: Shoes
-    100146: //RootNode
-    100148: Tops
+    100146: Tops
+    100148: //RootNode
     400000: Body
     400002: Bottoms
     400004: default
@@ -153,8 +153,8 @@ ModelImporter:
     400140: mixamorig:Spine1
     400142: mixamorig:Spine2
     400144: Shoes
-    400146: //RootNode
-    400148: Tops
+    400146: Tops
+    400148: //RootNode
     2100000: PackedMaterial0mat
     4300000: default
     4300002: Body
@@ -172,12 +172,7 @@ ModelImporter:
     13700008: Hair
     13700010: Shoes
     13700012: Tops
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: PackedMaterial0mat
-    second: {fileID: 2100000, guid: dd5c8893bc2c79f41a19d172201b00e1, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -208,14 +203,14 @@ ModelImporter:
       name: Walking
       takeName: mixamo.com
       firstFrame: 0
-      lastFrame: 39
+      lastFrame: 30
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

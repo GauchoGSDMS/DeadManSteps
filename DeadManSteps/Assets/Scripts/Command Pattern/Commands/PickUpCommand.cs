@@ -8,7 +8,7 @@ public class PickUpCommand : Command
 
 	public void Execute(GameObject actor, Animator anim)
 	{
-		this.animLocal = anim;
+		//this.animLocal = anim;
 		
 	}
 

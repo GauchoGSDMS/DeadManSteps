@@ -40,8 +40,8 @@ using System;
 		rotation *= rotateSpeed;
 		rotation *= Time.deltaTime;
 		actor.transform.Translate(0,0,translation);
-		actor.transform.Rotate(0,rotation,0);*/	
 		actor.transform.Rotate(0,rotation,0);	
-		anim.SetBool("isRunning",true);
+		actor.transform.Rotate(0,rotation,0);	
+		anim.SetBool("isRunning",true);*/
 	}
  }

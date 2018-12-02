@@ -11569,6 +11569,26 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: -0.098
       objectReference: {fileID: 0}
+    - target: {fileID: 95809975597616008, guid: 9a59694640fc4004196fedb7eb401e01,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: cc56f1f3c45ef944d87434bc15a81646, type: 2}
+    - target: {fileID: 95809975597616008, guid: 9a59694640fc4004196fedb7eb401e01,
+        type: 2}
+      propertyPath: m_WarningMessage
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114967849658320992, guid: 9a59694640fc4004196fedb7eb401e01,
+        type: 2}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 897745397}
+    - target: {fileID: 114967849658320992, guid: 9a59694640fc4004196fedb7eb401e01,
+        type: 2}
+      propertyPath: pistol
+      value: 
+      objectReference: {fileID: 773620483}
     m_RemovedComponents:
     - {fileID: 54178652437657046, guid: 9a59694640fc4004196fedb7eb401e01, type: 2}
     - {fileID: 65519053651126236, guid: 9a59694640fc4004196fedb7eb401e01, type: 2}
@@ -11596,6 +11616,11 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.98, z: 0}
+--- !u!95 &897745397 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95809975597616008, guid: 9a59694640fc4004196fedb7eb401e01,
+    type: 2}
+  m_PrefabInternal: {fileID: 897745393}
 --- !u!1 &901350918
 GameObject:
   m_ObjectHideFlags: 0
