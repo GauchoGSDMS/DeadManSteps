@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class ThomasShoot : MonoBehaviour
 {
-	private int _cantDisparos = 5;
-	private float tiempoEntreDisparos = 1;
-	private float ultimaVezDisparado = Time.time;
+	int _cantDisparos = 5;
+	float tiempoEntreDisparos = 1;
+	float ultimaVezDisparado = Time.time;
 	public GameObject pistola;
 
     void Update()

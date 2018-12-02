@@ -47,7 +47,6 @@ public class InputHandler {
 		{
 			MoveCommand.rotation = Input.GetAxis("Horizontal");
 			MoveCommand.translation = Input.GetAxis("Vertical");
-			MoveCommand.cController = ThomasMovementController.Instance.GetComponent<CharacterController>();
 			return new MoveCommand();
 		}
 
