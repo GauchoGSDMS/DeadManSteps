@@ -6,6 +6,8 @@ using UnityEngine;
 public class ThomasShoot : MonoBehaviour
 {
 	int _cantDisparos = 5;
+	float tiempoEntreDisparos = 1;
+	float ultimaVezDisparado = Time.time;
 	public GameObject pistola;
 
     void Update()
@@ -14,6 +16,7 @@ public class ThomasShoot : MonoBehaviour
         Animator m_Animator = GetComponent<Animator>();
 		//Clickeando mouse apuntar.
 		if (Input.GetMouseButton(1)){
+			
 			//Controla la camara rotando al pj con el mouse.
 			float mousex = Input.GetAxis ("Mouse X");
 			if(mousex!=0){
@@ -21,7 +24,13 @@ public class ThomasShoot : MonoBehaviour
 			}
 			m_Animator.Play("PistolAim");
 			pistola.SetActive(true);
-			Disparar();
+
+			//Funcion para disparar. Si supera el cooldowns
+			if(Time.time - ultimaVezDisparado > tiempoEntreDisparos){
+				Disparar();	
+				m_Animator.Play("Shooting");	
+			}
+
 		}
 
 		//Si levantamos click derecho vuelve a idle.
@@ -64,6 +73,9 @@ public class ThomasShoot : MonoBehaviour
 					//Matarla, por ser mujer ... #NiUnaMenosLasBolas
 					Destroy(_objetoRayCasteado);
 				}
+
+				Debug.Log("Hice 1 disparo");
+				
 
         	}
         	else

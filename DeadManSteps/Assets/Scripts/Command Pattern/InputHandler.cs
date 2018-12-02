@@ -16,9 +16,14 @@ public class InputHandler {
 			return new JumpCommand();
 		}
 
-		if(Input.GetMouseButton(1)||Input.GetMouseButton(0))
+		if(Input.GetMouseButton(1))
 		{
 			return new FireCommand();
+		}
+		else if(Input.GetMouseButtonUp(1))
+		{
+			ThomasMovementController.Instance.pistol.SetActive(false);
+			return new IdleCommand();
 		}
 
 		

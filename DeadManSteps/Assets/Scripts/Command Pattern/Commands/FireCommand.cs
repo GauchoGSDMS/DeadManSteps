@@ -11,24 +11,26 @@ public class FireCommand : Command {
 
 		
 
-		GameObject pistola = GameObject.Find("Pistol");
-		pistola.SetActive(false);
+		//GameObject pistola = GameObject.FindWithTag("Pistol");
+		GameObject pistola = ThomasMovementController.Instance.pistol;
+		pistola.SetActive(true);
         Animator m_Animator = anim;
 		
 		//Clickeando mouse apuntar.
-		if (Input.GetMouseButton(1)){
+		
 
-			//Controla la camara rotando al pj con el mouse.
-			float mousex = Input.GetAxis ("Mouse X");
-			if(mousex!=0){
-				ThomasMovementController.Instance.transform.Rotate(0, mousex*4.2f, 0);
-			}
-
-
-			m_Animator.Play("PistolAim");
-			pistola.SetActive(true);
-			Disparar(pistola);
+		//Controla la camara rotando al pj con el mouse.
+		float mousex = Input.GetAxis ("Mouse X");
+		if(mousex!=0){
+			ThomasMovementController.Instance.transform.Rotate(0, mousex*4.2f, 0);
 		}
+
+
+		m_Animator.Play("PistolAim");
+		pistola.SetActive(true);
+		
+		Disparar(pistola);
+		
 
 		//Si levantamos click derecho vuelve a idle.
 		if (Input.GetMouseButtonUp(1)){
