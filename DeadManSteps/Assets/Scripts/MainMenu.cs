@@ -1,11 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
 
 public class MainMenu : MonoBehaviour {
 	
@@ -22,46 +19,35 @@ public class MainMenu : MonoBehaviour {
 		Application.Quit();
 	}
 
-	void Start()
-	{
-		if(pauseMenuUI!= null)
-		{
+	void Start(){
+		if(pauseMenuUI!= null){
 			Cursor.visible = false;
 			Cursor.lockState = CursorLockMode.Locked;
-		}
-		else
-		{
+		}else{
 			Cursor.visible = true;
 			Cursor.lockState = CursorLockMode.None;
 		}
 	}
 
-	public void MainMenuGame(int sceneIndex)
-	{
+	public void MainMenuGame(int sceneIndex){
 		Cursor.visible = true;
 		Cursor.lockState = CursorLockMode.Locked;
 		Time.timeScale = 1f;
 		StartCoroutine(LoadAsynchronously(sceneIndex));
 	}
 
-	void Update()
-	{
-		if (Input.GetKeyDown(KeyCode.Escape))
-		{		
-			if (gameIsPaused)
-			{
+	void Update(){
+		if (Input.GetKeyDown(KeyCode.Escape)){		
+			if (gameIsPaused){
 				ResumeGame();	
-			}
-			else
-			{
+			}else{
 				PauseGame();
 			}
 		}
 	}
 	
 
-	public void ResumeGame()
-	{
+	public void ResumeGame(){
 		Cursor.visible = false;
 		Cursor.lockState = CursorLockMode.None;
 		pauseMenuUI.SetActive(false);
@@ -69,8 +55,7 @@ public class MainMenu : MonoBehaviour {
 		gameIsPaused = false;
 	}
 
-	public void PauseGame()
-	{
+	public void PauseGame(){
 		Cursor.visible = true;
 		Cursor.lockState = CursorLockMode.Locked;
 		pauseMenuUI.SetActive(true);
