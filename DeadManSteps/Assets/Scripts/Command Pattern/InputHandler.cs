@@ -43,7 +43,7 @@ public class InputHandler {
 			return new PickUpCommand();
 		}
 
-		if (((Input.GetAxis("Horizontal") !=0 || Input.GetAxis("Vertical") !=0)) && !ThomasMovementController.Instance.anim.GetBool("isTaking"))
+		if (((Input.GetAxis("Horizontal") !=0 || Input.GetAxis("Vertical") !=0)))// && !ThomasMovementController.Instance.anim.GetBool("isTaking"))
 		{
 			MoveCommand.rotation = Input.GetAxis("Horizontal");
 			MoveCommand.translation = Input.GetAxis("Vertical");

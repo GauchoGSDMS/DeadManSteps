@@ -6,9 +6,8 @@ using System;
  public class MoveCommand : Command {
 
 	public static float speed = 3.5f; 
-	//private float rotateSpeed = 85f;
+//	private float rotateSpeed = 90f;
 	private float gravity = 9.81f;
-	private float rotateSpeed = 85f;
 	public static float translation,rotation;
 	public static CharacterController cController ; 
 	Vector3 direction = new Vector3 ();//new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));

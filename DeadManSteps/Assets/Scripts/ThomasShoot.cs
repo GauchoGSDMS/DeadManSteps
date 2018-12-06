@@ -5,10 +5,17 @@ using UnityEngine;
 
 public class ThomasShoot : MonoBehaviour
 {
-	private int _cantDisparos = 5;
-	private float tiempoEntreDisparos = 1;
-	private float ultimaVezDisparado = Time.time;
 	public GameObject pistola;
+	private int _cantDisparos;
+	private float tiempoEntreDisparos ;
+	private float ultimaVezDisparado;
+
+	void Start() 
+	{
+		_cantDisparos = 5;
+		tiempoEntreDisparos = 1;
+		ultimaVezDisparado = Time.time;
+	}
 
     void Update()
     {    
