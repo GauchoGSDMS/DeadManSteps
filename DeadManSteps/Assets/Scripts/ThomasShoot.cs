@@ -27,7 +27,7 @@ public class ThomasShoot : MonoBehaviour
 			//Controla la camara rotando al pj con el mouse.
 			float mousex = Input.GetAxis ("Mouse X");
 			if(mousex!=0){
-				ThomasMovementController.Instance.transform.Rotate(0, mousex*4.2f, 0);
+				ThomasMovementController.Instance.transform.Rotate(0, mousex*1.5f*Time.deltaTime, 0);
 			}
 			m_Animator.Play("PistolAim");
 			pistola.SetActive(true);

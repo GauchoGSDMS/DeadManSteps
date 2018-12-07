@@ -7,7 +7,7 @@ public class CrouchCommand : Command
 
 	public void Execute(GameObject actor,Animator anim)
 	{
-		if (!anim.GetBool("isCrouching"))
+		/*if (!anim.GetBool("isCrouching"))
 		{
 			anim.SetBool("isCrouching",true);
 			anim.SetTrigger("Crouch");
@@ -19,7 +19,7 @@ public class CrouchCommand : Command
 			anim.SetBool("isCrouching",false);
 			MoveCommand.speed = 3f;
 			anim.SetBool("CanJump",true);
-		}
+		}*/
 	}
 
 }

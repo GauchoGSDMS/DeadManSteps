@@ -7,14 +7,15 @@ using UnityEngine;
 
 public class InputHandler {
 
+
 	public Command HandleInput()
 	{
 
-		if (Input.GetAxis("Jump") != 0 && ThomasMovementController.Instance.anim.GetBool("CanJump")) 
+		/*if (Input.GetAxis("Jump") != 0 && ThomasMovementController.Instance.anim.GetBool("CanJump")) 
 		{ 
 			// Significa que estoy queriendo saltar.
 			return new JumpCommand();
-		}
+		}*/
 
 		if(Input.GetMouseButton(1))
 		{
@@ -25,8 +26,6 @@ public class InputHandler {
 			ThomasMovementController.Instance.pistol.SetActive(false);
 			return new IdleCommand();
 		}
-
-		
 
 		if(Input.GetKeyDown(KeyCode.C))
 		{
@@ -45,9 +44,13 @@ public class InputHandler {
 
 		if (((Input.GetAxis("Horizontal") !=0 || Input.GetAxis("Vertical") !=0)))// && !ThomasMovementController.Instance.anim.GetBool("isTaking"))
 		{
-			MoveCommand.rotation = Input.GetAxis("Horizontal");
-			MoveCommand.translation = Input.GetAxis("Vertical");
+	
+			//MoveCommand.inp.x = Input.GetAxisRaw("Horizontal");
+			//MoveCommand.inp.y = Input.GetAxisRaw("Vertical");
+		
 			MoveCommand.cController = ThomasMovementController.Instance.GetComponent<CharacterController>();
+			MoveCommand.cam = Camera.main.transform;
+			
 			return new MoveCommand();
 		}
 
@@ -55,4 +58,5 @@ public class InputHandler {
 
 	} 
 
+	
 }
