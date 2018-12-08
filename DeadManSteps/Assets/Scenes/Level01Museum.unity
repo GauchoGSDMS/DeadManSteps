@@ -11667,27 +11667,32 @@ Prefab:
       objectReference: {fileID: 773620483}
     - target: {fileID: 4156309266709906, guid: 9a59694640fc4004196fedb7eb401e01, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.0062830625
       objectReference: {fileID: 0}
     - target: {fileID: 4156309266709906, guid: 9a59694640fc4004196fedb7eb401e01, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9999803
       objectReference: {fileID: 0}
     - target: {fileID: 4156309266709906, guid: 9a59694640fc4004196fedb7eb401e01, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -0.72
       objectReference: {fileID: 0}
     - target: {fileID: 4156309266709906, guid: 9a59694640fc4004196fedb7eb401e01, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 122.45
+      value: 122.39
       objectReference: {fileID: 0}
     - target: {fileID: 4156309266709906, guid: 9a59694640fc4004196fedb7eb401e01, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 34.895
+      value: 35.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 4156309266709906, guid: 9a59694640fc4004196fedb7eb401e01, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.22
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54178652437657046, guid: 9a59694640fc4004196fedb7eb401e01, type: 2}
     - {fileID: 65519053651126236, guid: 9a59694640fc4004196fedb7eb401e01, type: 2}
+    - {fileID: 143301587869030230, guid: 9a59694640fc4004196fedb7eb401e01, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 9a59694640fc4004196fedb7eb401e01, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &901350918
@@ -12577,6 +12582,28 @@ Transform:
   m_Father: {fileID: 450246189}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &980896048 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1917826131071108, guid: 9a59694640fc4004196fedb7eb401e01,
+    type: 2}
+  m_PrefabInternal: {fileID: 897745393}
+--- !u!143 &980896049
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 980896048}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!1 &983615779
 GameObject:
   m_ObjectHideFlags: 0

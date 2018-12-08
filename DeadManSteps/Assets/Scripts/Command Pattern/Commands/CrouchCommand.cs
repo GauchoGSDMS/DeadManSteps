@@ -20,6 +20,17 @@ public class CrouchCommand : Command
 			MoveCommand.speed = 3f;
 			anim.SetBool("CanJump",true);
 		}*/
+
+		if (anim.GetBool("isCrouching"))
+		{
+			anim.SetBool("isCrouching",false);
+			MoveCommand.speed = 3.5f;
+		}
+		else
+		{
+			anim.SetBool("isCrouching",true);
+			MoveCommand.speed = 1.5f;
+		}
 	}
 
 }

@@ -44,13 +44,7 @@ public class InputHandler {
 
 		if (((Input.GetAxis("Horizontal") !=0 || Input.GetAxis("Vertical") !=0)))// && !ThomasMovementController.Instance.anim.GetBool("isTaking"))
 		{
-	
-			//MoveCommand.inp.x = Input.GetAxisRaw("Horizontal");
-			//MoveCommand.inp.y = Input.GetAxisRaw("Vertical");
-		
 			MoveCommand.cController = ThomasMovementController.Instance.GetComponent<CharacterController>();
-			MoveCommand.cam = Camera.main.transform;
-			
 			return new MoveCommand();
 		}
 
