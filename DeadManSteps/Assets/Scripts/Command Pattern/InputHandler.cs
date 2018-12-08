@@ -17,6 +17,11 @@ public class InputHandler {
 			return new JumpCommand();
 		}*/
 
+		if(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+		{
+			return new RunCommand();
+		}
+
 		if(Input.GetMouseButton(1))
 		{
 			return new FireCommand();

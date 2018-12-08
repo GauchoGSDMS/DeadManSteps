@@ -17,7 +17,6 @@ using System;
 	
     // Use this for initialization
 		
-
 		moveDirection = new Vector3(0, 0, Input.GetAxis("Vertical"));
 		moveDirection = actor.transform.TransformDirection(moveDirection);
 		moveDirection *= speed;
