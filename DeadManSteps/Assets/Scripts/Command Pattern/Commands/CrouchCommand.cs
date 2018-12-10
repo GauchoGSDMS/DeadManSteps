@@ -7,16 +7,27 @@ public class CrouchCommand : Command
 
 	public void Execute(GameObject actor,Animator anim)
 	{
-		if (anim.GetBool("isCrouching"))
+		if(anim.GetBool("isRunning"))
 		{
-			anim.SetBool("isCrouching",false);
-			MoveCommand.speed = 3.5f;
-		}
-		else
+			anim.SetBool("isRunning",false);
+			MakeCrouch(anim);	
+		}else
 		{
-			anim.SetBool("isCrouching",true);
-			MoveCommand.speed = 1.5f;
+			MakeCrouch(anim);			
 		}
 	}
 
+	void MakeCrouch(Animator anim)
+	{
+		if (anim.GetBool("isCrouching"))
+			{
+				anim.SetBool("isCrouching",false);
+				MoveCommand.speed = 3.5f;
+			}
+			else
+			{
+				anim.SetBool("isCrouching",true);
+				MoveCommand.speed = 1.5f;
+			}
+	}
 }
