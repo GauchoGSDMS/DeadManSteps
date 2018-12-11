@@ -13,7 +13,7 @@ public class RunCommand : Command
 		}else
 		{
 			anim.SetBool("isRunning",true);
-			MoveCommand.speed = 7.5f;
+			MoveCommand.speed = 6.5f;
 		}
 	}
 }

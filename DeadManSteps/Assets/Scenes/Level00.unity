@@ -3285,8 +3285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1e4c5ae05a854142a7d97dce89b9795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadingScreen: {fileID: 246822855}
-  slider: {fileID: 246822854}
+  Phone: {fileID: 442127722}
 --- !u!1 &40568453
 GameObject:
   m_ObjectHideFlags: 0
@@ -19688,7 +19687,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh49052
+  m_Name: pb_Mesh553166
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -22134,7 +22133,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh47896
+  m_Name: pb_Mesh552426
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -22585,7 +22584,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &762052253
 Transform:
   m_ObjectHideFlags: 0
@@ -31439,7 +31438,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh47988
+  m_Name: pb_Mesh552488
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -33996,7 +33995,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh48246
+  m_Name: pb_Mesh552654
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2

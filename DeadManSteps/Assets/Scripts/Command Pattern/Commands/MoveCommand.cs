@@ -5,10 +5,10 @@ using System;
 
  public class MoveCommand : Command {
 
-	public static float speed = 3.5F;
+	public static float speed = 2F;
     public float jumpSpeed = 8.0F;
     public float gravity = 20.0F;
-    public float rotateSpeed = 180.0F;
+    public static float rotateSpeed = 180.0F;
     private Vector3 moveDirection = Vector3.zero;
 	public static CharacterController cController ;
 	

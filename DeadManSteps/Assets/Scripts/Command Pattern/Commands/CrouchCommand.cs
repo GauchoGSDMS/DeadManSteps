@@ -22,12 +22,12 @@ public class CrouchCommand : Command
 		if (anim.GetBool("isCrouching"))
 			{
 				anim.SetBool("isCrouching",false);
-				MoveCommand.speed = 3.5f;
+				MoveCommand.speed = 2f;
 			}
 			else
 			{
 				anim.SetBool("isCrouching",true);
-				MoveCommand.speed = 1.5f;
+				MoveCommand.speed = 1f;
 			}
 	}
 }

@@ -5,13 +5,27 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
-	public GameObject loadingScreen;
-	public Scrollbar slider;
-	public static bool hasPhone;
 	
+	public GameObject Phone;
+	public static bool isPhoneAlive;
+
 	// Update is called once per frame
-	void Update () {
-		if(hasPhone == true){
+	void Update () 
+	{
+		CheckPhone();
+	}
+
+	void CheckPhone()
+	{
+		if(Phone == null)
+		{
+			Debug.Log("El telefono no se encuentra.");
+			isPhoneAlive = false;
+		}
+		else
+		{
+			Debug.Log("El telefono se encuentra.");
+			isPhoneAlive = true;
 		}
 	}
 
