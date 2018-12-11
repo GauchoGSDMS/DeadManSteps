@@ -3313,6 +3313,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100154, guid: 765e2fde8c84f094e99304c6198491ea, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 765e2fde8c84f094e99304c6198491ea, type: 3}
   m_IsPrefabParent: 0
@@ -3359,7 +3363,7 @@ MonoBehaviour:
   - {fileID: 1924784648}
   - {fileID: 808291351}
   - {fileID: 1761792631}
-  speed: 0
+  speed: 1
 --- !u!1 &237152327
 GameObject:
   m_ObjectHideFlags: 0
@@ -21552,7 +21556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1acbca1fd32a9e54fbe2d5e03c1e7a21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pistola: {fileID: 358704940}
+  pistola: {fileID: 0}
 --- !u!114 &1736098478
 MonoBehaviour:
   m_ObjectHideFlags: 0

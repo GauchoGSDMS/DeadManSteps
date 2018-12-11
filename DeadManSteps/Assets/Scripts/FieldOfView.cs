@@ -18,7 +18,7 @@ public class FieldOfView : MonoBehaviour {
 	void Start() {
 		StartCoroutine ("FindTargetsWithDelay", .2f);
 		viewAngle = 190f;
-		viewRadius = 10f;
+		viewRadius = 20f;
 		patrol = GetComponent<Patrol>();
 	}
 
@@ -38,8 +38,9 @@ public class FieldOfView : MonoBehaviour {
 			if (targetsInViewRadius [i].name == "Thomas") {
 				Transform target = targetsInViewRadius [i].transform;				
 				Vector3 dirToTarget = (target.position - transform.position).normalized;
+				float dstToTarget = Vector3.Distance (transform.position, target.position);
 
-				if (Vector3.Angle (transform.forward, dirToTarget) < viewAngle / 2 ) {
+				if (Vector3.Angle (transform.forward, dirToTarget) < viewAngle / 2 && checkIfInside(dirToTarget, dstToTarget)) {
 
 				/* esto lo hago para que el guardia gire mirando a Thomas */
 					Vector3 patrolPointDir = target.position - transform.position;
@@ -52,7 +53,7 @@ public class FieldOfView : MonoBehaviour {
 					/********************************************************************/
 
 					if (Vector3.Distance (transform.position, target.position) < 5f) { /* si Thomas esta a menos de 5, lo empieza a seguir*/
-						float dstToTarget = Vector3.Distance (transform.position, target.position);
+						
 						patrol.enabled = false;
 						patrol.speed = 1.5f;
 
@@ -80,6 +81,22 @@ public class FieldOfView : MonoBehaviour {
 		}
 		return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad),0,Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
 	}
+
+/* este metodo chequea si Thomas esta a la vista de los guardias. Basicamente tira un raycast con alcance maximo a la posicion
+ donde esta Thomas y busca el primer hit. Si ese hit es vacio o el nombre del objeto no es Thomas, entonces Thomas esta a la vista.*/
+
+	bool checkIfInside(Vector3 dirToTarget, float targetdst) {
+
+		RaycastHit[] hits;
+		hits = Physics.RaycastAll(transform.position, dirToTarget, targetdst);
+		//float walldst = Vector3.Distance (transform.position, hitInfo.transform.position);
+
+		if (hits.Length > 0) {
+			if (hits[0].transform.name != "Thomas") {
+				return false;
+			} 		
+		}
+
+		return true;
+	}
 }
-
-
