@@ -8,27 +8,26 @@ public class GameController : MonoBehaviour {
 	
 	public GameObject Phone;
 	public static bool isPhoneAlive;
+	public GameObject camera;
 
 	// Update is called once per frame
+
+	void Start()
+	{
+		Object.DontDestroyOnLoad(camera);
+		Cursor.visible = false;
+	}
+
 	void Update () 
 	{
-		CheckPhone();
+		CheckPhone();	
 	}
 
 	void CheckPhone()
 	{
 		if(Phone == null)
-		{
-			Debug.Log("El telefono no se encuentra.");
 			isPhoneAlive = false;
-		}
 		else
-		{
-			Debug.Log("El telefono se encuentra.");
 			isPhoneAlive = true;
-		}
 	}
-
-
-
 }

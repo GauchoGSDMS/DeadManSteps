@@ -4,14 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
 public class MainMenu : MonoBehaviour {
 	
 	public GameObject loadingScreen;
 	public Scrollbar slider;
-	public GameObject pauseMenuUI = null;
+	public GameObject pauseMenuUI;
 	public static bool gameIsPaused = false;
+	public Text chargeText;
 
-	public void NewGame(int sceneIndex){
+	public void NewGame(int sceneIndex)
+	{
 		StartCoroutine (LoadAsynchronously (sceneIndex));
 	}
 
@@ -19,14 +22,16 @@ public class MainMenu : MonoBehaviour {
 		Application.Quit();
 	}
 
-	void Start(){
-		if(pauseMenuUI!= null){
+	void Start()
+	{
+		if(pauseMenuUI.activeSelf){
 			Cursor.visible = false;
 			Cursor.lockState = CursorLockMode.Locked;
 		}else{
 			Cursor.visible = true;
 			Cursor.lockState = CursorLockMode.None;
 		}
+		
 	}
 
 	public void MainMenuGame(int sceneIndex){
@@ -36,7 +41,8 @@ public class MainMenu : MonoBehaviour {
 		StartCoroutine(LoadAsynchronously(sceneIndex));
 	}
 
-	void Update(){
+	void Update()
+	{
 		if (Input.GetKeyDown(KeyCode.Escape)){		
 			if (gameIsPaused){
 				ResumeGame();	
@@ -65,11 +71,12 @@ public class MainMenu : MonoBehaviour {
 
 	IEnumerator LoadAsynchronously(int sceneIndex){
 		AsyncOperation operation = SceneManager.LoadSceneAsync (sceneIndex);
-		loadingScreen.SetActive (true);
+		loadingScreen.SetActive(true);
 
 		while (!operation.isDone) {
 			float progress = Mathf.Clamp01 (operation.progress / .9f);
-			slider.size = progress;
+			slider.size = progress; 
+			chargeText.text = progress * 100f + "%";
 			yield return null;
 		}
 	}

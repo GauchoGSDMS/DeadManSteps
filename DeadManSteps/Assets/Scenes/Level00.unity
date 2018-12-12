@@ -3286,6 +3286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Phone: {fileID: 442127722}
+  camera: {fileID: 2039630829}
 --- !u!1 &40568453
 GameObject:
   m_ObjectHideFlags: 0
@@ -31438,7 +31439,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh552488
+  m_Name: pb_Mesh45532
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -36864,6 +36865,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2039271592}
   m_Mesh: {fileID: 4300126, guid: 3a10b0088cc212f448fddc9ab8efcaf6, type: 3}
+--- !u!1 &2039630829 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1903353088733884, guid: 7039d1921d7d4d14fba6a575953eb2e2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1355575223}
 --- !u!1 &2043549003
 GameObject:
   m_ObjectHideFlags: 0
