@@ -11,6 +11,7 @@ public class FieldOfView : MonoBehaviour {
 	public LayerMask targetMask;
 	public LayerMask obstacleMask;
 	private Patrol patrol;
+	private Animator anim;
 
 	[HideInInspector]
 	public List<Transform> visibleTargets = new List<Transform>();
@@ -20,6 +21,7 @@ public class FieldOfView : MonoBehaviour {
 		viewAngle = 190f;
 		viewRadius = 20f;
 		patrol = GetComponent<Patrol>();
+		anim = GetComponent<Animator>();
 	}
 
 
@@ -56,6 +58,7 @@ public class FieldOfView : MonoBehaviour {
 						
 						patrol.enabled = false;
 						patrol.speed = 1.5f;
+						anim.SetBool("isRunning",true);
 
 						if (!Physics.Raycast (transform.position, dirToTarget, dstToTarget, obstacleMask)) {
 							transform.position = Vector3.MoveTowards(transform.position, target.position, 3 * Time.deltaTime);
@@ -70,6 +73,7 @@ public class FieldOfView : MonoBehaviour {
 			} else {
 				patrol.enabled = true;
 				patrol.speed = 0.5f;
+				anim.SetBool("isRunning",false);
 			}
 		}
 	}
