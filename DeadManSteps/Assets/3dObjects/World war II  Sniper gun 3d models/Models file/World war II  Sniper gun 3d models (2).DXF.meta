@@ -15,7 +15,22 @@ ModelImporter:
     2300000: 0
     3300000: 0
     4300000: 0
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material0
+    second: {fileID: 2100000, guid: 9339075d5f831774dbbe1f48b71b3683, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material1
+    second: {fileID: 2100000, guid: ba82f41d0a07b9546a3bbce78e6ca6bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material2
+    second: {fileID: 2100000, guid: 8718d5997db4aec478608cd329f7d36b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
