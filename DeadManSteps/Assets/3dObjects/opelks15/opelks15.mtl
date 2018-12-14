@@ -1,0 +1,53 @@
+# WaveFront OBJ - Mtl file exported by LightRay3D
+# opelks15.mtl
+# Num Materials: 7
+
+newmtl licht
+Ka 0.500000 0.500000 0.500000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ns 781.250000
+map_Kd G:\spiele\mohaa\model_entwurf\cubus_opel_KS15\opelks15\licht.tga
+
+newmtl geraete
+Ka 0.500000 0.500000 0.500000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ns 781.250000
+map_Kd G:\spiele\mohaa\model_entwurf\cubus_opel_KS15\opelks15\geraete.tga
+
+newmtl fenster
+Ka 0.500000 0.500000 0.500000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ns 781.250000
+map_Kd G:\spiele\mohaa\model_entwurf\cubus_opel_KS15\opelks15\fenster.tga
+
+newmtl tank
+Ka 0.500000 0.500000 0.500000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ns 781.250000
+map_Kd G:\spiele\mohaa\model_entwurf\cubus_opel_KS15\opelks15\tank.jpg
+
+newmtl kab
+Ka 0.500000 0.500000 0.500000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ns 781.250000
+map_Kd G:\spiele\mohaa\model_entwurf\cubus_opel_KS15\opelks15\kab.jpg
+
+newmtl radf
+Ka 0.500000 0.500000 0.500000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ns 781.250000
+map_Kd G:\spiele\mohaa\model_entwurf\cubus_opel_KS15\opelks15\radf.tga
+
+newmtl radp
+Ka 0.500000 0.500000 0.500000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ns 781.250000
+map_Kd G:\spiele\mohaa\model_entwurf\cubus_opel_KS15\opelks15\radp.tga
+

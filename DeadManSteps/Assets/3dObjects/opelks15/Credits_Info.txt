@@ -1,0 +1,66 @@
+[H2][B] 3D-Modell Opel-KS15 [/B][/H2]
+
+
+In diesem Jahr moechte ich einige meiner Modelle auch der breiten Masse der Gamer zur Verfuegung stellen.
+Waren meine Modelle / Modell-Modifikationen aufgrund der Dateispezifischen Formate ausschliesslich fuer den Gebrauch in der MoH-Triologie "Medal of Honor" einsetzbar, so will ich zukuenftig auch einige 3D-Standard-Formate unterstuetzen. Ich hoffe, dass so einige meiner Modelle den Weg in andere Games finden.
+
+[IMG]http://www.bb-mapping-designs.de/project_cubus/opelks15/opelks15_0.jpg[/IMG]
+
+Zum Beginn der Reihe kommt ein improvisierter Nachbau eines Fahrzeugs der Feuerwehr aus der Zeit des 2. Weltkriegs.
+Fahrzeuge dieses Typs wurden KS 15 genannt und in verschiedensten Varianten bis zum Ende des Krieges gefertigt.
+Diese hier aehnelt einem Fahrzeug aus dem Jahr 1940, dass zwischen 1940 bis Kriegsende auf dem Fliegerhorst Muenster-Handorf seinen Dienst verrichtete.
+
+[IMG]http://www.bb-mapping-designs.de/project_cubus/opelks15/opelks15_1.JPG[/IMG][IMG]http://www.bb-mapping-designs.de/project_cubus/opelks15/opelks15.gif[/IMG][IMG]http://www.bb-mapping-designs.de/project_cubus/opelks15/opelks15_10.JPG[/IMG]
+
+Hier einige Bilder, die mir als Vorlage dienten:
+
+[URL]http://bos-fahrzeuge.info/einsatzfahrzeuge/76539/Privat_-_FlKS_15_-_Ostbevern_aD[/URL]
+
+Das vorliegende Modell wurde kombiniert aus vorhandenen Teilen eines OPEL-Trucks aus der MoHAA-Reihe:
+- Kabienenvorderteil
+- Fahrgestell
+- Raeder
+
+und einigen frei erzeugten und hinzugefuegten Komponenten:
+- Kabinenergaenzung
+- Geraeteaufbau
+- feuerwehrtechnischen Geraetschaften
+
+Das 3d-Modell wurde ausschliesslich als LowPoly-Modell fuer den Gebrauch in Medal of Honor konstruiert und ist deshalb nicht sehr detailiert.
+
+Die verwendeten Texturen sind nicht sehr gut gelungen und beduerfen einiger Nacharbeit.
+Aus diesem Grund habe ich die uv-layouts der einzelnen meshes im *.jpg und im *.bmp Format dem Download separat beigelegt.
+
+Da MoH die Grundlage meines Handelns ist, liegt eine Testmap im MoH-typischen pk3-Format bei.
+Es ist eine verkleinerte Version von "The Hunt". Eine Ruinenlandschaft, wo Feuerwehrfahrzeuge einfach reinpassen.
+
+Kopiert die Datei zzzuser_cubus_opelks15.pk3 einfach ins MAINTA-Verzeichnis und startet im SP-Modus die Map:
+
+test_230_opelks15
+[IMG]http://www.bb-mapping-designs.de/project_cubus/opelks15/shot0066.jpg[/IMG][IMG]http://www.bb-mapping-designs.de/project_cubus/opelks15/shot0068.jpg[/IMG][IMG]http://www.bb-mapping-designs.de/project_cubus/opelks15/shot0070.jpg[/IMG]
+
+MoH-Info:
+MoH-SH
+Patch 2.15
+SP-Modus
+
+
+Info zu den Exportversionen:
+[IMG]http://www.bb-mapping-designs.de/project_cubus/opelks15/export-info.jpg[/IMG]
+
+Texturen-Formate:
+jpg
+tga
+
+Als Standardtextur ist eine Version der Luftwaffe aufgelegt.
+In den Ordnern tex_flp und tex_wl findet ihr die spezifischen Texturen der Feuerloesch-Polizei und der Luftwaffenvariante.
+
+Das Modell darf jederzeit weiterverwendet und modifziert werden, um es neuen Umgebungsbedingungen anzupassen.
+Als Nett und guten Stil wuerde ich es empfinden, wenn bei einer Weiterverbreitung ein Verweis auf mich und bbmd erfolgen wuerde.
+Es wuerde mich freuen, wenn ich in irgendeiner Form eine kleine Info ueber die Weiterverwendung erhalten koennte.
+
+Viel Spass bei der Verwendung
+
+cubus
+www.bb-mapping-designs.de
+01/2013
