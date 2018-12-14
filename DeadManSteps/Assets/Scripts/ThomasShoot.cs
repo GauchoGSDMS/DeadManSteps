@@ -9,6 +9,7 @@ public class ThomasShoot : MonoBehaviour
 	private int _cantDisparos;
 	private float tiempoEntreDisparos ;
 	private float ultimaVezDisparado;
+	public Animator m_Animator;
 
 	void Start() 
 	{
@@ -20,7 +21,7 @@ public class ThomasShoot : MonoBehaviour
     void Update()
     {    
     	pistola.SetActive(false);
-        Animator m_Animator = GetComponent<Animator>();
+        
 		//Clickeando mouse apuntar.
 		if (Input.GetMouseButton(1)){
 			
@@ -93,7 +94,14 @@ public class ThomasShoot : MonoBehaviour
         	}
 
 		}
+
+		
     }
+
+	IEnumerator ShootingAnimation(Animator anim){
+		anim.Play("ShootingAnimation");	
+		yield return new WaitForSeconds(1);
+	}
 
 	
 

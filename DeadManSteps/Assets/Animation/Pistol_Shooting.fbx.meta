@@ -232,7 +232,7 @@ ModelImporter:
     - serializedVersion: 16
       name: PistolShooting
       takeName: mixamo.com
-      firstFrame: 13
+      firstFrame: 10
       lastFrame: 35
       wrapMode: 0
       orientationOffsetY: 0

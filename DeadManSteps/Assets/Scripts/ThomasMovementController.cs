@@ -11,7 +11,7 @@ public class ThomasMovementController : MonoBehaviour {
 	public Animator anim;
 	public GameObject pistol;
 	public static ThomasMovementController Instance {get; private set;}
-	
+	public bool disparando = false;
 
 	//1° Declarar un Singleton Acá -- Y ponerle el animator publico y estatico. 
 
@@ -41,8 +41,27 @@ public class ThomasMovementController : MonoBehaviour {
 			Command cmd = inputHandler.HandleInput(); // Me devuelve que commando se va a ejecutar
 			cmd.Execute(this.gameObject,anim); //Ejecuta el comando especifico,aca podria ir cualquier cosa, siempre y cuando matchee con algun comando. 
 		}	
+
+		if (Input.GetMouseButton(0)&&Input.GetMouseButton(1)&& disparando==false){
+			disparando = true;
+			GetComponent<AudioSource>().Play();
+			StartCoroutine("Shooting");
+		}
 	
 	}
+
+	 IEnumerator Shooting() {
+		 anim.Play("PistolShooting");
+		
+		 GameObject pistol1 = pistol;
+		 pistol.transform.Translate(new Vector3(0,-.2f,.2f));
+		 pistol.transform.Rotate(-10,0,0);
+		 yield return new WaitForSeconds(0.1f);
+		 pistol.transform.Rotate(10,0,0);
+         yield return new WaitForSeconds(0.5f);
+		 pistol.transform.Translate(new Vector3(0,.2f,-.2f));
+		 disparando = false;
+     }
  
 }
 

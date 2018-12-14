@@ -8,7 +8,7 @@ public class FireCommand : Command {
 	{
 		// Esto si queres borralo, es una prueba para saber que devolvia el commando. 
 		Debug.Log("Actor--->" + actor.name + "Cmd --> Fire" );
-
+		Debug.Log("Acadisparo");
 		
 
 		//GameObject pistola = GameObject.FindWithTag("Pistol");
@@ -25,16 +25,22 @@ public class FireCommand : Command {
 			ThomasMovementController.Instance.transform.Rotate(0, mousex*4.2f, 0);
 		}
 
-
+		if (Input.GetMouseButton(1)&&ThomasMovementController.Instance.disparando==false){
+		Debug.Log("Aca Hago Animacion");
 		m_Animator.Play("PistolAim");
 		pistola.SetActive(true);
 		
 		Disparar(pistola);
+		}
 		
 
 		//Si levantamos click derecho vuelve a idle.
 		if (Input.GetMouseButtonUp(1)){
 			m_Animator.Play("Idle");
+		}
+		if (Input.GetMouseButton(0)){
+			Debug.Log("Aca Disparo");
+			//m_Animator.Play("PistolShooting");
 		}
 
 
@@ -50,6 +56,7 @@ public class FireCommand : Command {
         layerMask = ~layerMask;
         //Aca defino a quienes puedo matar con un raycast y a quienes no
 		List<string> _listaDePuedoMatar = new List<string>(){ "Elizabeth", "Policia", "Otros" };
+	
 
 		//Este es el hitaso ...
         RaycastHit hit;
@@ -80,8 +87,11 @@ public class FireCommand : Command {
         	{
 				//Si el raycast pega en el infinito, dibujar una linea blanca...
             	Debug.Log("Did not Hit");
+				
         	}
 
 		}
 	}	
+
 }
+

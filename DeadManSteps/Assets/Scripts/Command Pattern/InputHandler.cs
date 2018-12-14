@@ -21,7 +21,7 @@ public class InputHandler {
 		{
 			return new RunCommand();
 		}
-
+	
 		if(Input.GetMouseButton(1))
 		{
 			return new FireCommand();
