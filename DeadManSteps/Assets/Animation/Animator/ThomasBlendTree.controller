@@ -32,12 +32,15 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
+<<<<<<< Updated upstream
   - m_Name: isRunning
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
+=======
+>>>>>>> Stashed changes
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -57,6 +60,7 @@ BlendTree:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Blend Tree
+  m_Name: Walking
   m_Childs:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 3e7380190243cc647b5c6d5251d08bbd, type: 3}
@@ -168,6 +172,9 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 4b0683215f522cb46af7b06e22852d67, type: 3}
+=======
+    m_Motion: {fileID: 7400000, guid: 1f7ff638924a88048ac6cdc718c1722e, type: 3}
+>>>>>>> Stashed changes
     m_Threshold: 0.25
     m_Position: {x: 0, y: 1}
     m_TimeScale: 1
@@ -176,6 +183,9 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: d9d3d3d1a2885154eb78d018cc9bb3e6, type: 3}
+=======
+    m_Motion: {fileID: 7400000, guid: 6cd29f7a8b395804f929fe5e55f7079c, type: 3}
+>>>>>>> Stashed changes
     m_Threshold: 0.5
     m_Position: {x: 0, y: -1}
     m_TimeScale: 1
@@ -184,6 +194,9 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 4b0683215f522cb46af7b06e22852d67, type: 3}
+=======
+    m_Motion: {fileID: 7400000, guid: 82b56d9ec0a9ab746bb452c39b2314a8, type: 3}
+>>>>>>> Stashed changes
     m_Threshold: 0.75
     m_Position: {x: -1, y: 0}
     m_TimeScale: 1
@@ -192,6 +205,9 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 4b0683215f522cb46af7b06e22852d67, type: 3}
+=======
+    m_Motion: {fileID: 7400000, guid: 2dc249633c844f14fbb2d27bb6d9357b, type: 3}
+>>>>>>> Stashed changes
     m_Threshold: 1
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
@@ -225,6 +241,9 @@ AnimatorStateTransition:
   m_TransitionOffset: 0
   m_ExitTime: 0.75
   m_HasExitTime: 0
+=======
+  m_HasExitTime: 1
+>>>>>>> Stashed changes
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -256,6 +275,7 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+<<<<<<< Updated upstream
 --- !u!1101 &1101190522005507850
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -351,10 +371,13 @@ AnimatorStateTransition:
   m_TransitionOffset: 0
   m_ExitTime: 0.89973265
   m_HasExitTime: 0
+=======
+  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+<<<<<<< Updated upstream
 --- !u!1102 &1102067005310593514
 AnimatorState:
   serializedVersion: 5
@@ -382,6 +405,32 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1102 &1102067005310593514
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Crouch
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 1101153042707144330}
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 206978373300055920}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &1102500134612588178
 AnimatorState:
   serializedVersion: 5
@@ -392,8 +441,10 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
+<<<<<<< Updated upstream
   - {fileID: 1101691783466575920}
   - {fileID: 1101905110475986210}
+  - {fileID: 1101559669685836022}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -448,11 +499,19 @@ AnimatorStateMachine:
     m_State: {fileID: 1102500134612588178}
     m_Position: {x: 312, y: 120, z: 0}
   - serializedVersion: 1
+<<<<<<< Updated upstream
     m_State: {fileID: 1102067005310593514}
     m_Position: {x: 588, y: 12, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102508780805728378}
     m_Position: {x: 600, y: 168, z: 0}
+=======
+    m_State: {fileID: 1102059913018743226}
+    m_Position: {x: 312, y: 240, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102067005310593514}
+    m_Position: {x: 480, y: 24, z: 0}
+>>>>>>> Stashed changes
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

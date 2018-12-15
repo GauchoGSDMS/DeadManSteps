@@ -37,7 +37,7 @@ public class FieldOfView : MonoBehaviour {
 		Collider[] targetsInViewRadius = Physics.OverlapSphere (transform.position, viewRadius, targetMask);
 
 		for (int i = 0; i < targetsInViewRadius.Length; i++) {
-			if (targetsInViewRadius [i].name == "Thomas") {
+			if (targetsInViewRadius [i].name == "Thomas") { // Aca es donde detecta a thomas. 
 				Transform target = targetsInViewRadius [i].transform;				
 				Vector3 dirToTarget = (target.position - transform.position).normalized;
 				float dstToTarget = Vector3.Distance (transform.position, target.position);

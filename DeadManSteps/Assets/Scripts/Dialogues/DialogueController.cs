@@ -2,13 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueController : MonoBehaviour {
 
 	public Text dialogueText;
 	public Image dialogueBox;
 	private Queue<string> sentences;
-
+	public Text chargeText;
+	public GameObject panelLS = null;
+	public Scrollbar slider;
+	
 	void Awake () {
 		sentences = new Queue<string>();
 	}
@@ -36,7 +40,7 @@ public class DialogueController : MonoBehaviour {
 		else if(sentences.Count == 0 && !GameController.isPhoneAlive)
 		{
 			EndDialogue();
-			Debug.Log("Termino el Primer Nivel");
+			StartCoroutine(LoadAsynchronously(2));
 			return;
 		}
 		string sentence = sentences.Dequeue();
@@ -51,4 +55,18 @@ public class DialogueController : MonoBehaviour {
 		Time.timeScale = 1f;
 	}
 
+	IEnumerator LoadAsynchronously(int sceneIndex){
+		AsyncOperation operation = SceneManager.LoadSceneAsync (sceneIndex);
+		
+		if(panelLS!=null)
+			panelLS.SetActive(true);
+		
+		while (!operation.isDone) {
+			float progress = Mathf.Clamp01 (operation.progress / .9f);
+			slider.size = progress; 
+			chargeText.text = Mathf.Round(progress * 100f).ToString() + "%";
+			yield return null;
+		}
+	}
+	
 }
