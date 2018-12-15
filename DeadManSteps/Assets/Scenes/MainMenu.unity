@@ -115,6 +115,10 @@ NavMeshSettings:
   m_NavMeshData: {fileID: 0}
 --- !u!114 &52060397 stripped
 MonoBehaviour:
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 52060395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_PrefabParentObject: {fileID: 114315003564761692, guid: 1774f628ed19d2b40b6e12c2a89d3d97,
     type: 2}
   m_PrefabInternal: {fileID: 635298294}

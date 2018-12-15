@@ -8,9 +8,7 @@ public class GameController : MonoBehaviour {
 	
 	public GameObject Phone;
 	public static bool isPhoneAlive;
-	public static bool isAmuletAlive;
 	public GameObject camera;
-	public GameObject amulet; 
 
 	// Update is called once per frame
 
@@ -22,8 +20,7 @@ public class GameController : MonoBehaviour {
 
 	void Update () 
 	{
-		CheckPhone();
-		CheckAmulet();	
+		CheckPhone();	
 	}
 
 	void CheckPhone()
@@ -32,13 +29,5 @@ public class GameController : MonoBehaviour {
 			isPhoneAlive = false;
 		else
 			isPhoneAlive = true;
-	}
-
-	void CheckAmulet()
-	{
-		if(amulet == null)
-			isAmuletAlive = false;
-		else
-			isAmuletAlive = true;
 	}
 }
