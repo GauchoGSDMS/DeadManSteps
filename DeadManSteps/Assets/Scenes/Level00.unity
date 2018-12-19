@@ -3286,7 +3286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Phone: {fileID: 442127722}
-  camera: {fileID: 2039630829}
+  cam: {fileID: 2039630829}
   amulet: {fileID: 0}
 --- !u!1 &40568453
 GameObject:
@@ -31425,7 +31425,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh24894
+  m_Name: pb_Mesh98686
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2

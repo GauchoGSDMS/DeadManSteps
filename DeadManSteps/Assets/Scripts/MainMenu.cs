@@ -12,6 +12,8 @@ public class MainMenu : MonoBehaviour {
 	public GameObject pauseMenuUI;
 	public static bool gameIsPaused = false;
 	public Text chargeText;
+	public GameObject panelMM = null;
+	public GameObject panelLS = null;
 
 	public void NewGame(int sceneIndex)
 	{
@@ -72,6 +74,12 @@ public class MainMenu : MonoBehaviour {
 	IEnumerator LoadAsynchronously(int sceneIndex){
 		AsyncOperation operation = SceneManager.LoadSceneAsync (sceneIndex);
 		loadingScreen.SetActive(true);
+
+		if (panelMM != null)
+			panelMM.SetActive(false);
+		
+		if(panelLS!=null)
+			panelLS.SetActive(true);
 
 		while (!operation.isDone) {
 			float progress = Mathf.Clamp01 (operation.progress / .9f);

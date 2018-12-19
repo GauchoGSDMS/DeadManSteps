@@ -12412,6 +12412,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.85, z: 0}
 --- !u!1 &983615779
 GameObject:
   m_ObjectHideFlags: 0
@@ -21361,6 +21362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pistola: {fileID: 0}
+  m_Animator: {fileID: 0}
 --- !u!114 &1736098478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21397,6 +21399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
   pistol: {fileID: 0}
+  disparando: 0
 --- !u!65 &1736098481
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26170,6 +26173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Phone: {fileID: 0}
   camera: {fileID: 0}
+  amulet: {fileID: 0}
 --- !u!4 &2097564507
 Transform:
   m_ObjectHideFlags: 0

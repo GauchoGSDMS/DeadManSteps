@@ -9,14 +9,15 @@ public class GameController : MonoBehaviour {
 	public GameObject Phone;
 	public static bool isPhoneAlive;
 	public static bool isAmuletAlive;
-	public GameObject camera;
+	public GameObject cam;
 	public GameObject amulet; 
 
 	// Update is called once per frame
 
 	void Start()
 	{
-		Object.DontDestroyOnLoad(camera);
+		//Object.DontDestroyOnLoad(this);
+		Object.DontDestroyOnLoad(cam);
 		Cursor.visible = false;
 	}
 	

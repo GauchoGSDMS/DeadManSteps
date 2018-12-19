@@ -16,6 +16,7 @@ public class pickUpItems : MonoBehaviour {
 //				this.GetComponent<DialogueTrigger>().TriggerDialogue();
 //				this.GetComponent<AudioSource>().volume = 0;
 				CheckWhoIAM();
+				TryForce();
 				Destroy(this.gameObject);
 			} 	
 		} 
@@ -40,6 +41,11 @@ public class pickUpItems : MonoBehaviour {
 			GameController.isAmuletAlive = false;	
 		}
 		
+	}
+
+	void TryForce()
+	{
+		this.GetComponent<Rigidbody>().AddForce(new Vector3(0,0,50f));
 	}
 
 }
