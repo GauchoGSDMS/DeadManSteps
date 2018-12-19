@@ -12,6 +12,9 @@ public class Destructible : MonoBehaviour {
 	        GameObject warning = GameObject.Find ("warning");
 	        Destroy(warning.gameObject);
 			Destroy(gameObject);
+			GameObject fire = GameObject.Find("Particle System");
+			Vector3 temp = new Vector3(0,-2f,0);
+			fire.transform.position += temp ;
         }
     }
 
