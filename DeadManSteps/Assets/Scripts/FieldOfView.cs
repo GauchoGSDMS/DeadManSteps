@@ -18,8 +18,8 @@ public class FieldOfView : MonoBehaviour {
 
 	void Start() {
 		StartCoroutine ("FindTargetsWithDelay", .2f);
-		viewAngle = 190f;
-		viewRadius = 20f;
+		viewAngle = 60f;
+		viewRadius = 8f;
 		patrol = GetComponent<Patrol>();
 		anim = GetComponent<Animator>();
 	}
