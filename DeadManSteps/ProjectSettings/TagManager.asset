@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PickUp
   - Guards
+  - GuardSotano
   layers:
   - Default
   - TransparentFX

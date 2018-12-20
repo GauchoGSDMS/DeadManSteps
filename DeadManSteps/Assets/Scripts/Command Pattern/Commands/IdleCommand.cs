@@ -6,6 +6,10 @@ public class IdleCommand : Command {
 
 	public void Execute(GameObject actor,Animator anim)
 	{
-		//anim.SetBool("isRunning",false);
+		if (anim.GetBool("isRunning"))
+		{
+			anim.SetBool("isRunning",false);
+			MoveCommand.speed = 2f;
+		}
 	}
 }

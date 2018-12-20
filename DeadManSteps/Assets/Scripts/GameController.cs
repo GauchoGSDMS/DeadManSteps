@@ -11,6 +11,8 @@ public class GameController : MonoBehaviour {
 	public static bool isAmuletAlive;
 	public GameObject cam;
 	public GameObject amulet; 
+	public static bool isDistractionOk;
+	private GameObject[] lstGuards;
 
 	// Update is called once per frame
 
@@ -25,7 +27,8 @@ public class GameController : MonoBehaviour {
 	{
 	
 		CheckPhone();
-		CheckAmulet();	
+		CheckAmulet();
+		CheckDistraction();	
 	}
 
 
@@ -43,5 +46,24 @@ public class GameController : MonoBehaviour {
 			isAmuletAlive = false;
 		else
 			isAmuletAlive = true;
+	}
+
+	void CheckDistraction()
+	{
+		if(isDistractionOk)
+		{
+			if(lstGuards == null)
+			{
+				lstGuards = GameObject.FindGameObjectsWithTag("GuardSotano");
+				
+				foreach (GameObject guard in lstGuards)
+				{
+					// Funciona viejahhh!  Persigue a Thomas. 
+					guard.GetComponent<Patrol>().enabled = true;
+					guard.GetComponent<FieldOfView>().enabled = true;
+					guard.GetComponent<Animator>().SetBool("isWalking",true);
+				}
+			}			
+		}
 	}
 }
