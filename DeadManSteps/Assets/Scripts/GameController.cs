@@ -11,8 +11,10 @@ public class GameController : MonoBehaviour {
 	public static bool isAmuletAlive;
 	public GameObject cam;
 	public GameObject amulet; 
+	public GameObject wallToActivate;
 	public static bool isDistractionOk;
 	private GameObject[] lstGuards;
+
 
 	// Update is called once per frame
 
@@ -62,6 +64,8 @@ public class GameController : MonoBehaviour {
 					guard.GetComponent<Patrol>().enabled = true;
 					guard.GetComponent<FieldOfView>().enabled = true;
 					guard.GetComponent<Animator>().SetBool("isWalking",true);
+					wallToActivate.SetActive(false);
+
 				}
 			}			
 		}
