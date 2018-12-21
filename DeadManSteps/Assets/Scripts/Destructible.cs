@@ -7,7 +7,9 @@ public class Destructible : MonoBehaviour {
 	public GameObject destroyedVersion;
 	public GameObject lights;
 	public GameObject civiles;
+	public GameObject alarma;
 	private GameObject[] lstGuardsHall;
+
 
 	void OnTriggerStay(Collider other)
 	 {
@@ -24,7 +26,8 @@ public class Destructible : MonoBehaviour {
 				fire.transform.position += temp ;
 				lights.SetActive(false);
 				civiles.SetActive(false);
-				
+				alarma.SetActive(true);
+
 				lstGuardsHall = GameObject.FindGameObjectsWithTag("Guards");
 
 				foreach(GameObject guard in lstGuardsHall)
