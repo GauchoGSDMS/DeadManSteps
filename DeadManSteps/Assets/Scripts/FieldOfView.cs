@@ -103,4 +103,12 @@ public class FieldOfView : MonoBehaviour {
 
 		return true;
 	}
+
+	void OnCollisionEnter(Collision other)
+	{
+		if (other.gameObject.CompareTag("Player"))
+		{
+			GameController.isGameOver = true;
+		}	
+	}
 }
