@@ -2,16 +2,10 @@
  using System.Collections.Generic;
  using UnityEngine;
  using UnityEngine.UI;
- public class CharacterMovementController : MonoBehaviour
- {
+ public class CharacterMovementController : MonoBehaviour{
  
      // En el Inspector incluir referencia al Thomas, que es el que queremos seguir.
 	 public Transform Player;
- 
-     void Start()
-     {
- 
-     }
  
 	//Sigue indefinidamente al jugador
      void Update()
@@ -28,8 +22,6 @@
              transform.position += transform.forward * 3 * Time.deltaTime;
 				Debug.Log("Lejos");
 			//Deberiamos lanzar una animacion ...
-         }else{
-			 Debug.Log("Alcance al Inutil");
-		 }
+         }
      }
  }

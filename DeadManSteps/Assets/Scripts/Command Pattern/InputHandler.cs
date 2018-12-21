@@ -48,9 +48,6 @@ public class InputHandler {
 			return new MoveCommand();
 		}
 
-	
-		
-
 		return null;// Si presiono algo que no sea lo que esta arriba GG. 
 
 	} 

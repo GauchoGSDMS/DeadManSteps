@@ -67,19 +67,11 @@ public class ThomasShoot : MonoBehaviour
 			// Lanza un raycast ....
 			if (Physics.Raycast(pistola.transform.position, pistola.transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask))
         	{
-				//Si ese raycast no pega en el infinito (wooooooo) lo dibuja con color amarillo en la pantalla.
 	            Debug.DrawRay(pistola.transform.position, pistola.transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-				
-				//Capturo el game object contra el que impacta el raycast.
 				GameObject _objetoRayCasteado = hit.collider.gameObject;
-				
-				//Capturo el nombre del objeto en string con el que impacta el raycast
 				string _objetoRayCasteadoNombre = _objetoRayCasteado.name;
-				
-				//Si ese objeto es elizabeth ...
             	if( _listaDePuedoMatar.Contains(_objetoRayCasteadoNombre) ){
-					//Matarla, por ser mujer ... #NiUnaMenosLasBolas
-					Destroy(_objetoRayCasteado);
+					_objetoRayCasteado.GetComponent<Animator>().SetBool("isDead",true);
 				}
 
 				Debug.Log("Hice 1 disparo");

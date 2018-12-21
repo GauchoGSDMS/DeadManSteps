@@ -5682,7 +5682,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh35750
+  m_Name: pb_Mesh29832
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -10117,12 +10117,12 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 237242117}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 796b5cfaec98ef843b3256838f59faa1, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -16201,7 +16201,7 @@ GameObject:
   - component: {fileID: 376980646}
   m_Layer: 0
   m_Name: GuardiaSotano3
-  m_TagString: GuardSotano
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21899,6 +21899,7 @@ MonoBehaviour:
   amulet: {fileID: 1267464193}
   wallToActivate: {fileID: 1764300490}
   pnlGameOver: {fileID: 350304435}
+  doorWin: {fileID: 1252348141}
 --- !u!4 &432818509
 Transform:
   m_ObjectHideFlags: 0
@@ -21910,7 +21911,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &433659917
 Mesh:
@@ -24137,7 +24138,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh33118
+  m_Name: pb_Mesh26670
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -25994,7 +25995,7 @@ GameObject:
   - component: {fileID: 530893252}
   m_Layer: 0
   m_Name: GuardiaSotano4
-  m_TagString: GuardSotano
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37208,7 +37209,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 842226169}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -79.323685, y: 104.09357, z: 92.87907}
+  m_LocalPosition: {x: -79.323685, y: 103.451, z: 92.87907}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 336739229}
@@ -38600,26 +38601,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 1e9483dbe68479d4889166e292e99aee, type: 3}
   m_PrefabInternal: {fileID: 857361309}
---- !u!1 &859566077 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1917826131071108, guid: 9a59694640fc4004196fedb7eb401e01,
-    type: 2}
-  m_PrefabInternal: {fileID: 2067377032}
---- !u!54 &859566078
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 859566077}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!4 &859566082 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4156309266709906, guid: 9a59694640fc4004196fedb7eb401e01,
@@ -49942,7 +49923,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1112650345}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79870586cef47db4ebb715a6d9e56761, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fb86c791b0c60240aad0791767ce3e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!135 &1112650348
@@ -50647,7 +50628,7 @@ Prefab:
     - target: {fileID: 224115245472922998, guid: 6ee1638c3f7789e41ac04ce43b16c8f2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224115245472922998, guid: 6ee1638c3f7789e41ac04ce43b16c8f2,
         type: 2}
@@ -57405,6 +57386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1252348142}
   - component: {fileID: 1252348143}
+  - component: {fileID: 1252348144}
   m_Layer: 0
   m_Name: PUERTA_ENTRADA
   m_TagString: Untagged
@@ -57439,6 +57421,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0.24, y: 0, z: -0.27}
+--- !u!114 &1252348144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1252348141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d31a406b87a1a9e4dbfcc03b8e4653f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1252512385
 Prefab:
   m_ObjectHideFlags: 0
@@ -57688,7 +57681,7 @@ RectTransform:
   - {fileID: 350304436}
   - {fileID: 1231745500}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -66732,7 +66725,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh73976
+  m_Name: pb_Mesh27478
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -70501,7 +70494,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1608366010}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61a72ca475c3a924a83245ea94e39b01, type: 3}
+  m_Script: {fileID: 11500000, guid: e3197efcee0814e4480ac4429dfd129c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1611065559
@@ -71003,7 +70996,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1608366012}
+      - m_Target: {fileID: 0}
         m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
@@ -71828,7 +71821,7 @@ GameObject:
   - component: {fileID: 1646353922}
   m_Layer: 0
   m_Name: GuardiaSotano1
-  m_TagString: GuardSotano
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72531,7 +72524,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh38568
+  m_Name: pb_Mesh33218
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -82278,6 +82271,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1709421142}
+  - component: {fileID: 1709421143}
   m_Layer: 0
   m_Name: Civiles
   m_TagString: Untagged
@@ -82310,6 +82304,86 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1709421143
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1709421141}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6809e3622bc1ded439a3d31ab8739197, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &1713585500
 GameObject:
   m_ObjectHideFlags: 0
@@ -93875,7 +93949,7 @@ GameObject:
   - component: {fileID: 1998269701}
   m_Layer: 0
   m_Name: GuardiaSotano2
-  m_TagString: GuardSotano
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94395,7 +94469,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh35218
+  m_Name: pb_Mesh29170
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -96862,7 +96936,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4156309266709906, guid: 9a59694640fc4004196fedb7eb401e01, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1917826131071108, guid: 9a59694640fc4004196fedb7eb401e01, type: 2}
       propertyPath: m_TagString
@@ -97463,7 +97537,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2082769719}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 041962e839d42444a882bada6ce317af, type: 3}
+  m_Script: {fileID: 11500000, guid: 324bd5a0901202a44b23e1dbc6ad3d7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!135 &2082769721

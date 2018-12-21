@@ -40,6 +40,12 @@ public class ThomasMovementController : MonoBehaviour {
 		{
 			Command cmd = inputHandler.HandleInput(); // Me devuelve que commando se va a ejecutar
 			cmd.Execute(this.gameObject,anim); //Ejecuta el comando especifico,aca podria ir cualquier cosa, siempre y cuando matchee con algun comando. 
+		}
+
+		if (Input.GetMouseButtonUp(1)){
+			anim.SetBool("isAiming",false);
+			pistol.SetActive(false);
+			disparando = false;
 		}	
 	
 	}

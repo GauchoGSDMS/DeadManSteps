@@ -15,13 +15,13 @@ public class GameController : MonoBehaviour {
 	public GameObject wallToActivate;
 	public GameObject pnlGameOver;
 	public static bool isDistractionOk;
+	public GameObject doorWin;
 	private GameObject[] lstGuards;
 	
 
 	void Start()
 	{
 		Object.DontDestroyOnLoad(cam);
-		Cursor.visible = false;
 	}
 	
 	void Update () 
@@ -47,6 +47,7 @@ public class GameController : MonoBehaviour {
 			isAmuletAlive = false;
 		else
 			isAmuletAlive = true;
+			doorWin.GetComponent<WinDoor>().enabled = true;
 	}
 
 	void CheckDistraction()
@@ -59,7 +60,6 @@ public class GameController : MonoBehaviour {
 				
 				foreach (GameObject guard in lstGuards)
 				{
-					// Funciona viejahhh!  Persigue a Thomas. 
 					guard.GetComponent<Patrol>().enabled = true;
 					guard.GetComponent<FieldOfView>().enabled = true;
 					guard.GetComponent<Animator>().SetBool("isWalking",true);
