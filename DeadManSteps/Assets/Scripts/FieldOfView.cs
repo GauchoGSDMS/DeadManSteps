@@ -57,7 +57,7 @@ public class FieldOfView : MonoBehaviour {
 					if (Vector3.Distance (transform.position, target.position) < 5f) { /* si Thomas esta a menos de 5, lo empieza a seguir*/
 						
 						patrol.enabled = false;
-						patrol.speed = 1.5f;
+						patrol.speed = 3.5f;
 						anim.SetBool("isRunning",true);
 
 						if (!Physics.Raycast (transform.position, dirToTarget, dstToTarget, obstacleMask)) {
@@ -72,7 +72,7 @@ public class FieldOfView : MonoBehaviour {
 				}
 			} else {
 				patrol.enabled = true;
-				patrol.speed = 0.5f;
+				patrol.speed = 1.5f;
 				anim.SetBool("isRunning",false);
 			}
 		}
@@ -104,7 +104,7 @@ public class FieldOfView : MonoBehaviour {
 		return true;
 	}
 
-	void OnCollisionEnter(Collision other)
+	private void OnCollisionEnter(Collision other) 
 	{
 		if (other.gameObject.CompareTag("Player"))
 		{

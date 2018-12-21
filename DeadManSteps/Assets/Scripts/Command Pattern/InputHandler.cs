@@ -21,17 +21,12 @@ public class InputHandler {
 		{
 			return new RunCommand();
 		}
-	
+
 		if(Input.GetMouseButton(1))
 		{
 			return new FireCommand();
 		}
-		else if(Input.GetMouseButtonUp(1))
-		{
-			ThomasMovementController.Instance.pistol.SetActive(false);
-			return new IdleCommand();
-		}
-
+		
 		if(Input.GetKeyDown(KeyCode.C))
 		{
 			return new CrouchCommand();
@@ -52,6 +47,9 @@ public class InputHandler {
 			MoveCommand.cController = ThomasMovementController.Instance.GetComponent<CharacterController>();
 			return new MoveCommand();
 		}
+
+	
+		
 
 		return null;// Si presiono algo que no sea lo que esta arriba GG. 
 

@@ -64,7 +64,6 @@ public class GameController : MonoBehaviour {
 					guard.GetComponent<FieldOfView>().enabled = true;
 					guard.GetComponent<Animator>().SetBool("isWalking",true);
 					wallToActivate.SetActive(false);
-
 				}
 			}			
 		}
@@ -76,6 +75,15 @@ public class GameController : MonoBehaviour {
 		{
 			pnlGameOver.SetActive(true);
 			Time.timeScale = 0f;
+			Cursor.visible = true;
+			Cursor.lockState = CursorLockMode.None;
+		}
+		else
+		{
+			pnlGameOver.SetActive(false);
+			Time.timeScale = 1f;
+			Cursor.visible = false;
+			Cursor.lockState = CursorLockMode.Locked;
 		}
 	}
 }

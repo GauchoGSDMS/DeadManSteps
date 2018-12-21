@@ -41,26 +41,8 @@ public class ThomasMovementController : MonoBehaviour {
 			Command cmd = inputHandler.HandleInput(); // Me devuelve que commando se va a ejecutar
 			cmd.Execute(this.gameObject,anim); //Ejecuta el comando especifico,aca podria ir cualquier cosa, siempre y cuando matchee con algun comando. 
 		}	
-
-		if (Input.GetMouseButton(0)&&Input.GetMouseButton(1)&& disparando==false){
-			disparando = true;
-			GetComponent<AudioSource>().Play();
-			StartCoroutine("Shooting");
-		}
 	
 	}
-
-	 IEnumerator Shooting() {
-		 anim.Play("PistolShooting");
-		 GameObject pistol1 = pistol;
-		 pistol.transform.Translate(new Vector3(0,-.2f,.2f));
-		 pistol.transform.Rotate(-10,0,0);
-		 yield return new WaitForSeconds(0.1f);
-		 pistol.transform.Rotate(10,0,0);
-         yield return new WaitForSeconds(0.5f);
-		 pistol.transform.Translate(new Vector3(0,.2f,-.2f));
-		 disparando = false;
-     }
  
 }
 

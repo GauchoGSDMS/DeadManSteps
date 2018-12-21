@@ -5,8 +5,9 @@ using UnityEngine;
 public class Destructible : MonoBehaviour {
 
 	public GameObject destroyedVersion;
-	private GameObject[] lstLights;
-
+	public GameObject lights;
+	public GameObject civiles;
+	private GameObject[] lstGuardsHall;
 
 	void OnTriggerStay(Collider other)
 	 {
@@ -21,15 +22,15 @@ public class Destructible : MonoBehaviour {
 				GameObject fire = GameObject.Find("Particle System");
 				Vector3 temp = new Vector3(0,-2f,0);
 				fire.transform.position += temp ;
+				lights.SetActive(false);
+				civiles.SetActive(false);
 				
-				lstLights = GameObject.FindGameObjectsWithTag("MuseumLights");
+				lstGuardsHall = GameObject.FindGameObjectsWithTag("Guards");
 
-				foreach(GameObject light in lstLights )
+				foreach(GameObject guard in lstGuardsHall)
 				{
-					light.SetActive(false);
+					guard.GetComponent<FieldOfView>().enabled = true;
 				}
-
-
 			}
 		 }
     }
