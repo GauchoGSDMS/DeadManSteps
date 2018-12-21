@@ -36,4 +36,8 @@ public class Patrol : MonoBehaviour {
 		transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 180f);
 		
 	}
+
+	private void OnDisable() {
+		Destroy(this.gameObject, this.gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length+2); 
+	}
 }

@@ -42,9 +42,11 @@ public class FireCommand : Command {
 
 			GameObject _objetoRayCasteado = hit.collider.gameObject;
 			string _objetoRayCasteadoNombre = _objetoRayCasteado.name;
-			
+
 			if(_objetoRayCasteado.CompareTag("GuardSotano") || _objetoRayCasteado.CompareTag("Guards")){
 				_objetoRayCasteado.GetComponent<Animator>().SetBool("isDead",true);
+				_objetoRayCasteado.GetComponent<Patrol>().enabled = false;
+				_objetoRayCasteado.GetComponent<FieldOfView>().enabled = false;
 			}
 
 		}
