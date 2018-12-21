@@ -9,28 +9,27 @@ public class GameController : MonoBehaviour {
 	public GameObject Phone;
 	public static bool isPhoneAlive;
 	public static bool isAmuletAlive;
+	public static bool isGameOver;
 	public GameObject cam;
 	public GameObject amulet; 
 	public GameObject wallToActivate;
+	public GameObject pnlGameOver;
 	public static bool isDistractionOk;
 	private GameObject[] lstGuards;
-
-
-	// Update is called once per frame
+	
 
 	void Start()
 	{
-		//Object.DontDestroyOnLoad(this);
 		Object.DontDestroyOnLoad(cam);
 		Cursor.visible = false;
 	}
 	
 	void Update () 
 	{
-	
 		CheckPhone();
 		CheckAmulet();
 		CheckDistraction();	
+		CheckGameOver();
 	}
 
 
@@ -68,6 +67,15 @@ public class GameController : MonoBehaviour {
 
 				}
 			}			
+		}
+	}
+
+	void CheckGameOver()
+	{
+		if(isGameOver)
+		{
+			pnlGameOver.SetActive(true);
+			Time.timeScale = 0f;
 		}
 	}
 }

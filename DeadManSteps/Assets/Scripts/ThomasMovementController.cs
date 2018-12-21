@@ -52,7 +52,6 @@ public class ThomasMovementController : MonoBehaviour {
 
 	 IEnumerator Shooting() {
 		 anim.Play("PistolShooting");
-		
 		 GameObject pistol1 = pistol;
 		 pistol.transform.Translate(new Vector3(0,-.2f,.2f));
 		 pistol.transform.Rotate(-10,0,0);
