@@ -53,7 +53,12 @@ ModelImporter:
     4300012: Moustaches
     4300014: Shoes
     4300016: Tops
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PackedMaterial0
+    second: {fileID: 2100000, guid: 42ad84879b6b22d4ba7998744d9db5da, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

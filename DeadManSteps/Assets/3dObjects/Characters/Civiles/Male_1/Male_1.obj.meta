@@ -38,7 +38,12 @@ ModelImporter:
     4300006: Eyelashes
     4300008: Shoes
     4300010: Tops
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PackedMaterial0
+    second: {fileID: 2100000, guid: 9c535d49617f1ee42a1bb9f0efb84569, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
