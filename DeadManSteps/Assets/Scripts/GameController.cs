@@ -8,7 +8,7 @@ public class GameController : MonoBehaviour {
 	
 	public GameObject Phone;
 	public static bool isPhoneAlive;
-	public static bool isAmuletAlive;
+	public static bool isAmuletAlive = true;
 	public static bool isGameOver;
 	public GameObject cam;
 	public GameObject amulet; 
@@ -43,11 +43,10 @@ public class GameController : MonoBehaviour {
 
 	void CheckAmulet()
 	{
-		if(amulet == null)
-			isAmuletAlive = false;
-		else
-			isAmuletAlive = true;
+		if(!isAmuletAlive){
+			doorWin.GetComponent<BoxCollider>().enabled = true;
 			doorWin.GetComponent<WinDoor>().enabled = true;
+		}
 	}
 
 	void CheckDistraction()
