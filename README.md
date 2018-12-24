@@ -9,7 +9,7 @@ You can experience the full game on Steam by the end of 2019!!
 ### Unity :muscle:
 Is the main source of the game, in addition the game is being developed in C# for an easy way to extend game functionalities. By the time the game is being developed the Unity version used is [2017.3.1f1](https://unity3d.com/es/get-unity/download/archive).
 
-### Blender :poop:
+### Blender
 Beacuse you never know when you will need it. Actual version being used in the project is [2.79b](https://www.blender.org/download/releases/).
 
 ### ProCore :metal:
